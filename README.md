@@ -1,54 +1,96 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# GitExplorer (with i18n)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Static Badge](https://img.shields.io/badge/Author-Nilesh_pawar-blue)
+![GitHub Repo stars](https://img.shields.io/github/stars/nileshpawarr/gitexplorer)
+![GitHub forks](https://img.shields.io/github/forks/nileshpawarr/gitexplorer)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+*Website: [Click to find the right git commands without digging through the web.](https://nileshpawarr.github.io/gitexplorer)*
+
+---
+
+Table of Contents
+
+[Intro](https://github.com/nileshpawarr/gitexplorer/blob/main/README.md#intro)
+
+[Tech Stack](https://github.com/nileshpawarr/gitexplorer/blob/main/README.md#tech-stack)
+
+[Installation](https://github.com/nileshpawarr/gitexplorer/blob/main/README.md#installation)
+
+[Makers](https://github.com/nileshpawarr/gitexplorer/blob/main/README.md#makers)
+
+[Contribute](https://github.com/nileshpawarr/gitexplorer/blob/main/README.md#contribute)
+
+
+### Intro
+
+**The original author seems to have abandoned the project. This is the re-written version of [repository](https://github.com/summitech/gitexplorer/) in React + TypeScript + Vite + i18next**
+
+
+
+*The following is the intro of the original project:*
+
+*It is a really cool resource for anyone to easily figure out the Git commands to use.*
+
+
+*Explore and Enjoy!*
+
+
+### Tech Stack
+
+- React
+- TypeScript
+- Vite
+- i18next
+- GitHub Pages
+
+### Installation and Run
+
+```bash
+# If you do not have yarn installed:
+npm install -g yarn
+# install all dependecies
+yarn 
+# start project in dev server.
+yarn dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Makers
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Origin Author: [Summitech](https://summitech.ng)
+
+Inspired Author: [Nilesh Pawar](https://github.com/nileshpawarr)
+
+
+### Contribute
+
+Thank you for contributing to GitExplorer!
+
+Please follow the below instructions to send a Pull Request (Search the website to make sure that this command doesn't already exist).
+
+The data folder (inside the src directory) is where you will be operating from. The three files you should be concerned with are the `primary-options.ts`, `secondary-options.ts` and `tertiary-options.ts` files.
+
+These three files are responsible for the options a user can pick.
+
+`primary-options.ts` contains an array of objects responsible for the options of the first select box.
+`secondary-options.ts` contains an object. This object houses an arrays of objects (a mouthful 😄), this is responsible for the second set of options a user sees when they select a primary option.
+`tertiary-option.ts` file is responsible for cases where there needs to be a third & final select box.
+
+###### Steps to add a new command
+
+0. Create and Checkout to a new branch.
+1. Add an object to the array in the `primary-options.ts` file with localised content
+
+2. Add an array to the `secondary-options.ts` file. 
+
+3. To add tertiary options to `tertiary-options.ts` file.,
+4. Add localised text and supported language in `locales` folder
+5. Once you are done, add, commit, push and create a PR to Main.
+
+
