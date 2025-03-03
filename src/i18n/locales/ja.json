@@ -1,0 +1,412 @@
+{
+  "Command": "コマンド",
+  "Explorer": "エクスプローラー",
+  "Usage": "使用法",
+  "command copied": "コマンドをコピーしました",
+  "Note": "注記",
+  "Normal type speed": "通常の入力速度",
+  "Fast type speed": "高速入力速度",
+  "Light Mode": "ライトモード",
+  "Dark Mode": "ダークモード",
+  "content": {
+    "subtitle": "ウェブを検索せずに必要なコマンドを見つけられます。"
+  },
+  "options": {
+    "title": "次の操作を行います:",
+    "primary": {
+      "add": "追加",
+      "commit": "コミット",
+      "revert": "元に戻す/リセット",
+      "initialize": "初期化",
+      "modify": "変更",
+      "show": "表示/閲覧",
+      "delete": "削除/除去",
+      "compareCommits": "2つのコミットを比較",
+      "configure": "設定",
+      "clone": "クローン",
+      "ignore": "無視",
+      "rename": "名前変更",
+      "merge": "マージ",
+      "squash": "スカッシュ",
+      "stash": "スタッシュ",
+      "debug": "デバッグ",
+      "recover": "復元",
+      "synchronize": "同期",
+      "rebase": "リベース",
+      "cherrypick": "チェリーピック"
+    },
+    "secondary": {
+      "commit": {
+        "local-changes": {
+          "label": "追跡されているファイルのすべてのローカル変更をコミットする (commit)"
+        },
+        "staged-changes": {
+          "label": "すべてのステージングされた変更をコミットする (staged)",
+          "nb": "<message> をコミットメッセージに置き換えてください。"
+        }
+      },
+      "configure": {
+        "email-name": {
+          "label": "名前とメールアドレス",
+          "nb": "ユーザー名とメールアドレスは、Gitホスティングプロバイダー（例：GitHub、Bitbucket、GitLab）で使用されているものと一致する必要があります。"
+        },
+        "editor": {
+          "label": "デフォルトのエディタ",
+          "nb": "デフォルトのエディタをvimに変更します。"
+        },
+        "diff-tool": {
+          "label": "外部diffツール",
+          "nb": "外部diffツールをmeldに設定します。"
+        },
+        "merge-tool": {
+          "label": "デフォルトのマージツール",
+          "nb": "デフォルトのマージツールをmeldに設定します。"
+        },
+        "color": {
+          "label": "色",
+          "nb": "コマンドライン出力の便利な色付けを有効にします。"
+        },
+        "signingkey": {
+          "label": "GPGキーを追加する",
+          "nb": "Gitは暗号的に安全ですが、完璧ではありません。インターネットから他の人の作業を取り込んでいて、コミットが信頼できるソースからのものであることを確認したい場合、GitにはGPGを使用して作業に署名し検証する方法がいくつかあります。"
+        }
+      },
+      "revert": {
+        "specific-commit": {
+          "label": "特定のコミット",
+          "nb": "各コミットのハッシュを確認するにはgit logを使用してください。"
+        },
+        "specific-file": {
+          "label": "特定のファイル"
+        },
+        "to-last-commit": {
+          "label": "最後のコミットに戻る"
+        },
+        "to-last-commit-from-remote": {
+          "label": "リモートブランチの最後のコミットに戻る"
+        }
+      },
+      "initialize": {
+        "new-repo": {
+          "label": "新しいリポジトリ",
+          "nb": "正しいディレクトリにいることを確認してください。"
+        }
+      },
+      "modify": {
+        "commit-message": {
+          "label": "最後のコミットメッセージを変更する"
+        },
+        "commit": {
+          "label": "最後のコミットを変更するが、コミットメッセージはそのままにする"
+        },
+        "remoteUrl": {
+          "label": "リポジトリのリモートURL",
+          "nb": "<alias> はリモートの名前です（例：origin）。"
+        }
+      },
+      "show": {
+        "repo-status": {
+          "label": "プロジェクトのステータス（ステージング済み、未ステージング、未追跡ファイルを含む）"
+        },
+        "logs": {
+          "label": "コミットログ/履歴"
+        },
+        "uncommittedChanges": {
+          "label": "未コミットの変更"
+        },
+        "committedChanges": {
+          "label": "コミット済み/ステージング済みの変更"
+        },
+        "remoteUrl": {
+          "label": "リポジトリのリモートURL"
+        },
+        "stash": {
+          "label": "スタッシュ"
+        },
+        "branch": {
+          "label": "ブランチ",
+          "nb": "アクティブなブランチは * で示されます。"
+        },
+        "tags": {
+          "label": "タグ"
+        }
+      },
+      "delete": {
+        "branch": {
+          "label": "ブランチを削除する"
+        },
+        "delete-multiple-branches": {
+          "label": "複数のブランチを削除する"
+        },
+        "tag": {
+          "label": "タグを削除する"
+        },
+        "remote": {
+          "label": "リモートを削除する"
+        },
+        "untracked-files": {
+          "label": "未追跡ファイルを削除する",
+          "nb": "-<flag> を次のいずれかに置き換えてください：\n -i インタラクティブコマンド\n -n 削除される内容をプレビュー\n -f 強制削除\n -d ディレクトリを削除\n -X 無視されたファイルを削除\n -x 無視されたファイルと無視されていないファイルを削除。"
+        },
+        "files-from-index": {
+          "label": "インデックスからファイルを削除する",
+          "nb": "このオプションを使用して、インデックスからのみパスをアンステージおよび削除します。作業ツリーのファイルは、変更されているかどうかに関係なく、そのまま残ります。"
+        },
+        "local-branches-not-on-remote": {
+          "label": "リモートに存在しないローカルブランチを削除する",
+          "nb": "--dry-runオプションを使用して、どのブランチが削除されるかを報告しますが、実際には削除しません。"
+        },
+        "files-from-old-commit": {
+          "label": "古いコミットからファイルを削除する",
+          "nb": "前述のリベースオプションと同様に、filter-branchは書き換え操作です。履歴を公開した場合、新しい参照を--forceでプッシュする必要があります。"
+        }
+      },
+      "compareCommits": {
+        "terminal": {
+          "label": "結果をターミナルに出力する",
+          "nb": "sha1とsha2は、比較したいコミットのハッシュです。"
+        },
+        "file": {
+          "label": "結果をファイルに出力する",
+          "nb": "sha1とsha2は、比較したいコミットのハッシュです。\n\ndiff.txtは、差分の内容を保存するファイルです。"
+        }
+      },
+      "clone": {
+        "clone-repo-into-a-new-dir": {
+          "label": "既存のリポジトリを新しいディレクトリにクローンする",
+          "nb": "リポジトリは指定されたディレクトリにクローンされます。\n\n'directory'を希望のディレクトリに置き換えてください。"
+        },
+        "clone-repo-into-a-current-dir": {
+          "label": "既存のリポジトリを現在のディレクトリにクローンする",
+          "nb": "リポジトリは現在のディレクトリにクローンされます。\n\n現在のディレクトリは '.'（ドット）で表されます。"
+        },
+        "clone-repo-with-submodule-into-a-current-dir": {
+          "label": "既存のリポジトリとそのサブモジュールを現在のディレクトリにクローンする",
+          "nb": "Gitバージョンが2.13未満の場合は、代わりに--recursiveオプションを使用してください。"
+        },
+        "clone-submodule-after": {
+          "label": "既存のリポジトリをクローンした後、サブモジュールをクローンする"
+        }
+      },
+      "ignore": {
+        "ignore-files-in-a-dir": {
+          "label": "ディレクトリ内のすべてのファイルを無視する",
+          "nb": "これは.gitignoreファイルに追加する必要があります。\n\n'dir name'を無視したいディレクトリの名前に置き換えてください。"
+        },
+        "ignore-all-files-of-a-specific-type": {
+          "label": "特定のタイプのすべてのファイルを無視する",
+          "nb": "これは.gitignoreファイルに追加する必要があります。\n\n'filename extension'を無視したいファイルの拡張子に置き換えてください。\n\n例えば、*.pyはGitにリポジトリ内のすべてのPythonファイルを無視するように指示します。"
+        }
+      },
+      "help": {
+        "command-help": {
+          "label": "コマンドについてのヘルプ",
+          "nb": "例：git merge --help\n\nターミナルを終了するにはqを押してください。"
+        }
+      },
+      "add": {
+        "new-changes": {
+          "label": "新しい変更",
+          "nb": "現在のディレクトリ内のすべてのファイルを追加するには、'git add .'を使用します。\n\nディレクトリを追加するには、'git add <directory>'を使用します。"
+        },
+        "add-new-branch": {
+          "label": "新しいブランチを追加する"
+        },
+        "add-repo": {
+          "label": "新しいリモートリポジトリを追加する"
+        },
+        "add-alias": {
+          "label": "エイリアスを追加する",
+          "nb": "例：git config --global alias.st status。ターミナルでgit stと入力すると、git statusと同じ動作をします。"
+        },
+        "add-annotated-tag": {
+          "label": "注釈付きタグを追加する"
+        },
+        "add-annotated-tag-for-old-commit": {
+          "label": "古いコミットに注釈付きタグを追加する"
+        }
+      },
+      "push": {
+        "new-remote-branch": {
+          "label": "存在しないリモートブランチにプッシュする"
+        }
+      },
+      "rename": {
+        "branch": {
+          "label": "ブランチの名前を変更する"
+        },
+        "file": {
+          "label": "ファイルの名前を変更する"
+        },
+        "remoteUrl": {
+          "label": "リモートの名前を変更する"
+        }
+      },
+      "merge": {
+        "branch": {
+          "label": "別のブランチを現在のブランチにマージする"
+        },
+        "single-file": {
+          "label": "1つのファイルを別のブランチからマージする。"
+        }
+      },
+      "squash": {
+        "pr": {
+          "label": "プルリクエストのコミットを1つのコミットにまとめる",
+          "nb": "upstreamから最新のコミットを取得していることを確認してください。\n\n例（upstreamというリモートがあるとします）：\n\ngit fetch upstream\ngit rebase -i upstream/master\n\nまとめたいコミットの'pick'を'squash'に変更して保存します。\n\ngit push origin <トピックブランチ> --force-with-lease"
+        },
+        "commits": {
+          "label": "最後のn個のコミットを1つにまとめる",
+          "nb": "Nをまとめたいコミットの数に、<message>をコミットメッセージに置き換えてください。コミット履歴を確認するには'git log'コマンドを使用できます。"
+        }
+      },
+      "debug": {
+        "bisect": {
+          "label": "二分探索",
+          "nb": "少なくとも1つの不良コミットと1つの良好なコミットを指定すると、git bisectはその履歴範囲の中間にあるコミットを選択し、チェックアウトして、次のような出力をします：\nBisecting: 675 revisions left to test after this (roughly 10 steps)\n次に、チェックアウトされたバージョンをコンパイルしてテストする必要があります。そのバージョンが正しく動作する場合、次のように入力します：\n\ngit bisect good\n\nそのバージョンが不良の場合、次のように入力します：\n\ngit bisect bad\n\nその後、git bisectは次のように応答します：\n\nBisecting: 337 revisions left to test after this (roughly 9 steps)\n\nプロセスを繰り返します：ツリーをコンパイルし、テストし、結果に応じてgit bisect goodまたはgit bisect badを実行して、テストする次のコミットを要求します。\n最終的に、検査するリビジョンがなくなり、コマンドは最初の不良コミットの説明を出力します。参照refs/bisect/badはそのコミットを指します。\nbisectセッションの後、bisect状態をクリーンアップして元のHEADに戻るには、次のコマンドを実行します：\n\ngit bisect reset"
+        },
+        "blame": {
+          "label": "各行を誰が変更したかを確認する",
+          "nb": "-Lオプションは、出力を要求された行範囲に制限します。"
+        },
+        "grep": {
+          "label": "ファイル内を検索する",
+          "nb": "パターンに一致する行を出力します。\n-nオプションで一致する行の行番号を表示します。"
+        }
+      },
+      "recover": {
+        "dropped-commit": {
+          "label": "以前のコミットにハードリセットした後にぶら下がっているコミットのハッシュを表示する",
+          "nb": "代替：git log -g。復元するには、以下を使用します：\ngit checkout -b <recovery> <hash>"
+        },
+        "deleted-branch": {
+          "label": "削除されたブランチまたは他のGitオブジェクトのハッシュを表示する",
+          "nb": "ぶら下がっているすべてのGitオブジェクトのハッシュを表示します。復元するには、以下を使用します：\ngit checkout -b <recovery> <hash>"
+        }
+      },
+      "rebase": {
+        "origin-branch": {
+          "label": "オリジンブランチを作業ブランチにリベースする",
+          "nb": "オリジンブランチを作業ブランチにリベースします。<branch name>をマージするブランチに置き換えてください。"
+        },
+        "local-branch": {
+          "label": "ローカルブランチを作業ブランチにリベースする",
+          "nb": "別のローカルブランチを作業ブランチにリベースします。<branch name>をマージするブランチに置き換えてください。"
+        },
+        "skip": {
+          "label": "コミットをスキップする",
+          "nb": "リベース中、Gitは競合のためにコミットを自動的に適用できない場合があります。このコマンドを使用して、現在のコミットの変更を破棄し、受信ブランチの変更を適用できます。"
+        },
+        "continue": {
+          "label": "競合を解決した後に続行する",
+          "nb": "リベース中、Gitは競合のためにコミットを自動的に適用できない場合があります。これらの競合を手動で解決し、このコマンドを使用してリベース操作を続行できます。"
+        }
+      },
+      "synchronize": {
+        "branch-from-fork": {
+          "label": "フォーク内のブランチを同期する",
+          "nb": "まず、フォークのリモートリポジトリを追加する必要があります。"
+        }
+      },
+      "stash": {
+        "save-stash": {
+          "label": "（未）追跡ファイル",
+          "nb": "カスタムメッセージでスタッシュを保存するには、git stash save <message>を使用します。\n\n未追跡ファイルを保存するには、git stash save -uを使用します。"
+        },
+        "list-stash": {
+          "label": "スタッシュのリストを表示する"
+        },
+        "apply-stash": {
+          "label": "適用する"
+        },
+        "show": {
+          "label": "スタッシュの内容を表示する",
+          "nb": "最後のスタッシュの内容を表示する場合は、スタッシュIDを省略できます。"
+        },
+        "delete-stash": {
+          "label": "削除する"
+        },
+        "create-branch": {
+          "label": "新しいブランチを作成し、スタッシュを適用する"
+        }
+      },
+      "cherrypick": {
+        "origin-branch": {
+          "label": "オリジンブランチからコミットを作業ブランチに適用する",
+          "nb": "ブランチから1つ以上のコミットを作業ブランチに適用します。"
+        }
+      }
+    },
+    "tertiary": {
+      "logs": {
+        "all": {
+          "label": "すべて",
+          "nb": "ターミナルで q を押してログを終了します"
+        },
+        "last-n-commit": {
+          "label": "最後の xxx 件のコミット",
+          "nb": "n をコミット数に置き換えてください。例: git log -2"
+        },
+        "particular-period": {
+          "label": "特定の期間以降",
+          "nb": "期間を希望の時間枠に置き換えてください。例: git log --since=3days。2018-12-31 のような日付も使用できます。\n\n同様のオプションは --until, --before, --after です"
+        },
+        "commit-on-oneline": {
+          "label": "各コミットを1行で表示"
+        },
+        "patches-introduced": {
+          "label": "各コミットで導入されたパッチを表示"
+        }
+      },
+      "branch": {
+        "in": {
+          "label": "ブランチ内で作業中"
+        },
+        "outside": {
+          "label": "ブランチ外から"
+        }
+      },
+      "add-new-branch": {
+        "no-checkout": {
+          "label": "ただし、現在作業中のブランチに留まる"
+        },
+        "checkout": {
+          "label": "新しいブランチに切り替える"
+        },
+        "checkout-remote": {
+          "label": "別のブランチから"
+        }
+      },
+      "apply-stash": {
+        "latest": {
+          "label": "最新のスタッシュ"
+        },
+        "specific": {
+          "label": "特定のスタッシュ",
+          "nb": "スタッシュIDは、git stash list を実行すると取得できます。通常は stash@{index} という形式です。例: stash@{0}"
+        },
+        "pop": {
+          "label": "スタッシュを適用して削除",
+          "nb": "スタッシュIDはオプションです。特定のスタッシュを適用して削除する場合はIDを追加し、最新のスタッシュを削除する場合は空白のままにします"
+        }
+      },
+      "delete-stash": {
+        "all": {
+          "label": "すべてのスタッシュされた変更"
+        },
+        "specific": {
+          "label": "特定のスタッシュ"
+        }
+      },
+      "delete-multiple-branches": {
+        "name": {
+          "label": "名前で"
+        },
+        "pattern": {
+          "label": "パターンで",
+          "nb": "例: git branch | grep \"-\" | xargs git branch -D は、名前に '-' を含むすべてのブランチを削除します。または、git branch | grep -v \"master\\|staging\" | xargs git branch -D は、staging と master を除くすべてのブランチを削除します。\n\n注意: 正規表現パターンは常に引用符で囲んでください"
+        }
+      }
+    }
+  }
+}

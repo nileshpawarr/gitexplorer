@@ -1,0 +1,412 @@
+{
+  "Command": "Commande",
+  "Explorer": "Explorateur",
+  "Usage": "Utilisation",
+  "command copied": "commande copiée",
+  "Note": "Remarque",
+  "Normal type speed": "Vitesse de frappe normale",
+  "Fast type speed": "Vitesse de frappe rapide",
+  "Light Mode": "Mode Clair",
+  "Dark Mode": "Mode Sombre",
+  "content": {
+    "subtitle": "Trouvez les bonnes commandes sans chercher sur le web."
+  },
+  "options": {
+    "title": "Je veux :",
+    "primary": {
+      "add": "ajouter",
+      "commit": "valider (commit)",
+      "revert": "revenir/réinitialiser",
+      "initialize": "initialiser",
+      "modify": "modifier",
+      "show": "afficher/voir",
+      "delete": "supprimer",
+      "compareCommits": "comparer deux commits",
+      "configure": "configurer",
+      "clone": "cloner",
+      "ignore": "ignorer",
+      "rename": "renommer",
+      "merge": "fusionner",
+      "squash": "compacter (squash)",
+      "stash": "mettre de côté (stash)",
+      "debug": "déboguer",
+      "recover": "récupérer",
+      "synchronize": "synchroniser",
+      "rebase": "rebase",
+      "cherrypick": "cueillir (cherry-pick)"
+    },
+    "secondary": {
+      "commit": {
+        "local-changes": {
+          "label": "valider tous les changements locaux dans les fichiers suivis (commit)"
+        },
+        "staged-changes": {
+          "label": "valider tous les changements indexés (staged)",
+          "nb": "Remplacez <message> par votre message de commit."
+        }
+      },
+      "configure": {
+        "email-name": {
+          "label": "nom et adresse e-mail",
+          "nb": "Votre nom d'utilisateur et votre adresse e-mail doivent correspondre à ceux utilisés avec votre hébergeur Git (par exemple, GitHub, Bitbucket, GitLab)."
+        },
+        "editor": {
+          "label": "éditeur par défaut",
+          "nb": "Changer l'éditeur par défaut pour vim."
+        },
+        "diff-tool": {
+          "label": "outil de comparaison externe",
+          "nb": "Définir l'outil de comparaison externe sur meld."
+        },
+        "merge-tool": {
+          "label": "outil de fusion par défaut",
+          "nb": "Définir l'outil de fusion par défaut sur meld."
+        },
+        "color": {
+          "label": "couleur",
+          "nb": "Active la colorisation utile de la sortie en ligne de commande."
+        },
+        "signingkey": {
+          "label": "ajouter la clé GPG",
+          "nb": "Git est cryptographiquement sécurisé, mais pas infaillible. Si vous récupérez du travail d'autres personnes sur Internet et souhaitez vérifier que les commits proviennent d'une source de confiance, Git propose plusieurs moyens de signer et de vérifier le travail avec GPG."
+        }
+      },
+      "revert": {
+        "specific-commit": {
+          "label": "un commit spécifique",
+          "nb": "Utilisez git log pour voir le hash de chaque commit."
+        },
+        "specific-file": {
+          "label": "un fichier spécifique"
+        },
+        "to-last-commit": {
+          "label": "au dernier commit"
+        },
+        "to-last-commit-from-remote": {
+          "label": "au dernier commit sur la branche distante"
+        }
+      },
+      "initialize": {
+        "new-repo": {
+          "label": "un nouveau dépôt",
+          "nb": "Assurez-vous d'être dans le bon répertoire."
+        }
+      },
+      "modify": {
+        "commit-message": {
+          "label": "mon dernier message de commit"
+        },
+        "commit": {
+          "label": "mon dernier commit mais laisser le message de commit inchangé"
+        },
+        "remoteUrl": {
+          "label": "l'URL distante du dépôt",
+          "nb": "<alias> est le nom de votre distant, par exemple origin."
+        }
+      },
+      "show": {
+        "repo-status": {
+          "label": "état du projet, y compris les fichiers indexés (staged), non indexés (unstaged) et non suivis (untracked)"
+        },
+        "logs": {
+          "label": "historique des commits"
+        },
+        "uncommittedChanges": {
+          "label": "changements non validés"
+        },
+        "committedChanges": {
+          "label": "changements validés/indexés"
+        },
+        "remoteUrl": {
+          "label": "l'URL distante du dépôt"
+        },
+        "stash": {
+          "label": "stash"
+        },
+        "branch": {
+          "label": "branches",
+          "nb": "La branche active est préfixée par *."
+        },
+        "tags": {
+          "label": "étiquettes"
+        }
+      },
+      "delete": {
+        "branch": {
+          "label": "une branche"
+        },
+        "delete-multiple-branches": {
+          "label": "plusieurs branches"
+        },
+        "tag": {
+          "label": "une étiquette"
+        },
+        "remote": {
+          "label": "distant"
+        },
+        "untracked-files": {
+          "label": "fichiers non suivis",
+          "nb": "Remplacez -<flag> par :\n -i pour une commande interactive\n -n pour prévisualiser ce qui sera supprimé\n -f pour supprimer de force\n -d pour supprimer des répertoires\n -X pour supprimer des fichiers ignorés\n -x pour supprimer des fichiers ignorés et non ignorés."
+        },
+        "files-from-index": {
+          "label": "fichiers de l'index",
+          "nb": "Utilisez cette option pour désindexer et supprimer des chemins uniquement de l'index. Les fichiers dans l'arbre de travail, qu'ils soient modifiés ou non, ne seront pas affectés."
+        },
+        "local-branches-not-on-remote": {
+          "label": "branches locales qui n'existent pas sur le distant",
+          "nb": "Utilisez l'option --dry-run pour signaler quelles branches seront supprimées, sans les supprimer réellement."
+        },
+        "files-from-old-commit": {
+          "label": "fichiers d'anciens commits",
+          "nb": "Comme l'option de rebase décrite précédemment, filter-branch est une opération de réécriture. Si vous avez publié l'historique, vous devrez pousser les nouvelles références avec --force."
+        }
+      },
+      "compareCommits": {
+        "terminal": {
+          "label": "et afficher le résultat dans le terminal",
+          "nb": "sha1 et sha2 sont les hash SHA des commits que vous souhaitez comparer."
+        },
+        "file": {
+          "label": "et enregistrer le résultat dans un fichier",
+          "nb": "sha1 et sha2 sont les hash SHA des commits que vous souhaitez comparer. \n\ndiff.txt est le fichier dans lequel vous souhaitez enregistrer le contenu de la différence."
+        }
+      },
+      "clone": {
+        "clone-repo-into-a-new-dir": {
+          "label": "un dépôt existant dans un nouveau répertoire",
+          "nb": "Le dépôt est cloné dans le répertoire spécifié.\n\nRemplacez 'directory' par le répertoire souhaité."
+        },
+        "clone-repo-into-a-current-dir": {
+          "label": "un dépôt existant dans le répertoire actuel",
+          "nb": "Le dépôt est cloné dans le répertoire actuel.\n\nLe répertoire actuel est représenté par un '.' (point)."
+        },
+        "clone-repo-with-submodule-into-a-current-dir": {
+          "label": "un dépôt existant avec ses sous-modules dans le répertoire actuel",
+          "nb": "Si la version de Git est inférieure à 2.13, utilisez l'option --recursive à la place."
+        },
+        "clone-submodule-after": {
+          "label": "cloner les sous-modules après avoir cloné un dépôt existant"
+        }
+      },
+      "ignore": {
+        "ignore-files-in-a-dir": {
+          "label": "tous les fichiers dans un répertoire",
+          "nb": "Cela doit être ajouté au fichier .gitignore.\n\nRemplacez 'dir name' par le nom du répertoire dont vous voulez que Git ignore les fichiers."
+        },
+        "ignore-all-files-of-a-specific-type": {
+          "label": "tous les fichiers d'un type spécifique",
+          "nb": "Cela doit être ajouté au fichier .gitignore.\n\nRemplacez 'filename extension' par l'extension des fichiers que vous voulez que Git ignore.\n\nPar exemple, *.py indique à Git d'ignorer tous les fichiers Python dans le dépôt."
+        }
+      },
+      "help": {
+        "command-help": {
+          "label": "aide sur une commande",
+          "nb": "Exemple : git merge --help\n\nAppuyez sur q pour quitter le terminal."
+        }
+      },
+      "add": {
+        "new-changes": {
+          "label": "nouveaux changements",
+          "nb": "Pour ajouter tous les fichiers dans le répertoire actuel, utilisez 'git add .'.\n\nPour ajouter un répertoire, utilisez 'git add <directory>'."
+        },
+        "add-new-branch": {
+          "label": "une nouvelle branche"
+        },
+        "add-repo": {
+          "label": "un nouveau dépôt distant"
+        },
+        "add-alias": {
+          "label": "un alias",
+          "nb": "Exemple : git config --global alias.st status. En tapant git st dans le terminal, cela fait maintenant la même chose que git status."
+        },
+        "add-annotated-tag": {
+          "label": "une étiquette annotée"
+        },
+        "add-annotated-tag-for-old-commit": {
+          "label": "une étiquette annotée pour un ancien commit"
+        }
+      },
+      "push": {
+        "new-remote-branch": {
+          "label": "une branche distante inexistante"
+        }
+      },
+      "rename": {
+        "branch": {
+          "label": "une branche"
+        },
+        "file": {
+          "label": "un fichier"
+        },
+        "remoteUrl": {
+          "label": "un distant"
+        }
+      },
+      "merge": {
+        "branch": {
+          "label": "une autre branche dans la branche actuelle"
+        },
+        "single-file": {
+          "label": "fusionner un seul fichier d'une branche à une autre."
+        }
+      },
+      "squash": {
+        "pr": {
+          "label": "fusionner les commits d'une pull request en un seul commit",
+          "nb": "Assurez-vous que les derniers commits sont récupérés depuis upstream.\n\nPar exemple (en supposant que vous avez un distant nommé upstream) :\n\ngit fetch upstream\ngit rebase -i upstream/master\n\nChangez 'pick' en 'squash' pour les commits que vous souhaitez fusionner et enregistrez.\n\ngit push origin <branche de sujet> --force-with-lease"
+        },
+        "commits": {
+          "label": "fusionner les n derniers commits en un seul",
+          "nb": "Remplacez N par le nombre de commits que vous souhaitez fusionner et <message> par votre message de commit. Vous pouvez utiliser la commande 'git log' pour voir votre historique de commits."
+        }
+      },
+      "debug": {
+        "bisect": {
+          "label": "recherche binaire",
+          "nb": "Une fois que vous avez spécifié au moins un mauvais et un bon commit, git bisect sélectionne un commit au milieu de cette plage d'historique, l'extrait et affiche quelque chose comme :\nBisect : 675 révisions restantes à tester après celle-ci (environ 10 étapes)\nVous devez maintenant compiler la version extraite et la tester. Si cette version fonctionne correctement, tapez :\n\ngit bisect good\n\nSi cette version est défectueuse, tapez :\n\ngit bisect bad\n\nEnsuite, git bisect répondra avec quelque chose comme :\n\nBisect : 337 révisions restantes à tester après celle-ci (environ 9 étapes)\n\nContinuez à répéter le processus : compilez l'arbre, testez-le et, selon le résultat, exécutez git bisect good ou git bisect bad pour demander le prochain commit à tester.\nFinalement, il n'y aura plus de révisions à inspecter, et la commande affichera une description du premier mauvais commit. La référence refs/bisect/bad pointera vers ce commit.\nAprès une session de bisect, pour nettoyer l'état de bisect et revenir au HEAD original, exécutez la commande suivante :\n\ngit bisect reset"
+        },
+        "blame": {
+          "label": "qui a modifié chaque ligne",
+          "nb": "L'option -L limite la sortie à la plage de lignes demandée."
+        },
+        "grep": {
+          "label": "rechercher dans les fichiers",
+          "nb": "Affiche les lignes correspondant à un motif.\nOption -n pour afficher les numéros de ligne des correspondances."
+        }
+      },
+      "recover": {
+        "dropped-commit": {
+          "label": "afficher les hash des commits abandonnés après un hard reset vers un commit précédent",
+          "nb": "Alternative : git log -g. Pour récupérer, utilisez :\ngit checkout -b <recovery> <hash>"
+        },
+        "deleted-branch": {
+          "label": "afficher les hash des branches supprimées ou d'autres objets Git",
+          "nb": "Affiche les hash de tous les objets Git abandonnés. Pour récupérer, utilisez :\ngit checkout -b <recovery> <hash>"
+        }
+      },
+      "rebase": {
+        "origin-branch": {
+          "label": "une branche d'origine dans ma branche de travail",
+          "nb": "Rebase une branche d'origine dans la branche de travail. Remplacez <branch name> par la branche que vous fusionnez."
+        },
+        "local-branch": {
+          "label": "une branche locale dans ma branche de travail",
+          "nb": "Rebase une autre branche locale dans la branche de travail. Remplacez <branch name> par la branche que vous fusionnez."
+        },
+        "skip": {
+          "label": "et sauter un commit",
+          "nb": "Pendant le rebase, Git pourrait ne pas pouvoir appliquer automatiquement les commits en raison de conflits. Vous pouvez utiliser cette commande pour ignorer vos propres changements dans le commit actuel et appliquer les changements d'une branche entrante."
+        },
+        "continue": {
+          "label": "et continuer après avoir résolu les conflits",
+          "nb": "Pendant le rebase, Git pourrait ne pas pouvoir appliquer automatiquement les commits en raison de conflits. Vous pouvez résoudre ces conflits manuellement et utiliser cette commande pour continuer votre opération de rebase."
+        }
+      },
+      "synchronize": {
+        "branch-from-fork": {
+          "label": "une branche dans un fork",
+          "nb": "Vous devez d'abord ajouter un dépôt distant pour votre fork."
+        }
+      },
+      "stash": {
+        "save-stash": {
+          "label": "fichiers (non) suivis",
+          "nb": "Pour enregistrer un stash avec un message personnalisé, utilisez git stash save <message>.\n\nPour enregistrer des fichiers non suivis, utilisez git stash save -u."
+        },
+        "list-stash": {
+          "label": "afficher la liste des stashes"
+        },
+        "apply-stash": {
+          "label": "appliquer"
+        },
+        "show": {
+          "label": "afficher le contenu d'un stash",
+          "nb": "Vous pouvez omettre l'ID du stash si vous souhaitez afficher le contenu du dernier stash."
+        },
+        "delete-stash": {
+          "label": "supprimer"
+        },
+        "create-branch": {
+          "label": "créer une nouvelle branche et appliquer le stash"
+        }
+      },
+      "cherrypick": {
+        "origin-branch": {
+          "label": "un commit d'une branche d'origine dans ma branche de travail",
+          "nb": "Appliquer un ou plusieurs commits d'une branche à votre branche de travail."
+        }
+      }
+    },
+    "tertiary": {
+      "logs": {
+        "all": {
+          "label": "tout",
+          "nb": "Appuyez sur q dans le terminal pour quitter les journaux"
+        },
+        "last-n-commit": {
+          "label": "pour les derniers xxx nombre de commits",
+          "nb": "Remplacez n par le nombre de commits, par exemple : git log -2"
+        },
+        "particular-period": {
+          "label": "depuis une période particulière",
+          "nb": "Remplacez la période par l'intervalle de temps souhaité, par exemple : git log --since=3days. Vous pouvez utiliser des dates comme 2018-12-31.\n\nLes options similaires sont --until, --before, --after"
+        },
+        "commit-on-oneline": {
+          "label": "avec chaque commit sur une ligne"
+        },
+        "patches-introduced": {
+          "label": "avec les correctifs introduits dans chaque commit"
+        }
+      },
+      "branch": {
+        "in": {
+          "label": "tout en travaillant dans la branche"
+        },
+        "outside": {
+          "label": "depuis l'extérieur de la branche"
+        }
+      },
+      "add-new-branch": {
+        "no-checkout": {
+          "label": "mais rester dans la branche actuelle sur laquelle je travaille"
+        },
+        "checkout": {
+          "label": "et basculer vers la nouvelle branche"
+        },
+        "checkout-remote": {
+          "label": "depuis une autre branche"
+        }
+      },
+      "apply-stash": {
+        "latest": {
+          "label": "dernier stash"
+        },
+        "specific": {
+          "label": "un stash spécifique",
+          "nb": "L'ID du stash peut être obtenu en exécutant git stash list. Il est généralement au format suivant : stash@{index}, par exemple : stash@{0}"
+        },
+        "pop": {
+          "label": "et supprimer le stash",
+          "nb": "L'ID du stash est facultatif. Ajoutez-le si vous souhaitez appliquer et supprimer un stash spécifique ; sinon, laissez-le vide pour supprimer le dernier stash"
+        }
+      },
+      "delete-stash": {
+        "all": {
+          "label": "tous les changements stockés"
+        },
+        "specific": {
+          "label": "stash spécifique"
+        }
+      },
+      "delete-multiple-branches": {
+        "name": {
+          "label": "par nom"
+        },
+        "pattern": {
+          "label": "par motif",
+          "nb": "Par exemple : git branch | grep \"-\" | xargs git branch -D supprimera toutes les branches contenant '-' dans leur nom, ou git branch | grep -v \"master\\|staging\" | xargs git branch -D supprimera toutes les branches sauf staging et master.\n\nRemarque : Placez toujours votre motif d'expression régulière (regex) entre guillemets"
+        }
+      }
+    }
+  }
+}

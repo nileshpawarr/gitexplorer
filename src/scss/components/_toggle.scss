@@ -1,0 +1,80 @@
+@use '../core/variables' as *;
+@use '../core/mixins' as *;
+@use "sass:color";
+
+
+
+.toggle-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 7rem;
+  height: 3.5rem;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: 3px solid var(--bg);
+  font-size: 0.5rem;
+  padding: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  box-shadow: -2px -2px 3px var(--light),
+    2px 2px 3px var(--shadow),
+    inset 2px 2px 3px var(--shadow),
+    inset 2px 2px 20px var(--shadow);
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+   
+
+  .switch {
+    position: absolute;
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+    transform: var(--switch-transform);
+    transition: transform 0.3s, background-color 0.1s ease;
+    background: var(--bg);
+
+    box-shadow: inset 2px 2px 2px var(--light),
+      5px 6px 6px var(--shadow);
+  }
+
+  .sun,
+  .moon {
+    position: relative;
+    border-radius: 50%;
+    height: 2.4rem;
+    width: 2.4rem;
+    padding: 5px;
+    z-index: 9;
+  }
+
+  .sun path {
+    fill: var(--sun);
+    opacity: var(--sun-opacity);
+  }
+
+  .moon path {
+    fill: var(--moon);
+    opacity: var(--moon-opacity);
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-family: Termina, sans-serif;
+    font-weight: 600;
+    font-size: 0.6rem;
+
+    a {
+      color: var(--moon);
+      text-transform: lowercase;
+    }
+  }
+}
