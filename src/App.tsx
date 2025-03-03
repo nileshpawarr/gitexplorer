@@ -1,14 +1,14 @@
 import { useState, useEffect, useCallback } from "react";
-import { Footer, Nav } from "./components";
+import { useTranslation } from "react-i18next";
 import Typist from "react-typist";
 import { isMobile } from "react-device-detect";
-import { optionsFirst, optionsSecond, optionsThird } from "./data";
 import Select from "react-select";
-import clipboard from "./assets/images/clipboard.svg";
 import classnames from "classnames";
-import { useTranslation } from "react-i18next";
-import { copyToClipboard } from "./utilities";
+import { optionsFirst, optionsSecond, optionsThird } from "./data";
+import clipboard from "./assets/images/clipboard.svg";
 import { OptionType } from "./data/secondary-options";
+import { copyToClipboard } from "./utilities";
+import { Footer, Nav } from "./components";
 
 const avgTypingDelay: number = 0;
 

@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "clean": "rm -rf node_modules",
-    "build": "vite build",
-    "dev": "vite",
+    "build": "vite build --mode production",
+    "dev": "vite --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview --mode production"
   },
   "dependencies": {
     "classnames": "^2.5.1",
