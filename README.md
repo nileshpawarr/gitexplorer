@@ -20,7 +20,7 @@ Table of Contents
 
 [Tech Stack](https://github.com/nileshpawarr/gitexplorer/blob/main/README.md#tech-stack)
 
-[Installation](https://github.com/nileshpawarr/gitexplorer/blob/main/README.md#installation)
+[Setting Up](https://github.com/nileshpawarr/gitexplorer/blob/main/README.md#setting-up)
 
 [Makers](https://github.com/nileshpawarr/gitexplorer/blob/main/README.md#makers)
 
@@ -49,7 +49,7 @@ Table of Contents
 - i18next
 - GitHub Pages
 
-### Installation and Run
+### Setting Up
 
 ```bash
 # If you do not have yarn installed:
