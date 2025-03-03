@@ -1,0 +1,412 @@
+{
+  "Command": "Opdracht",
+  "Explorer": "Verkenner",
+  "Usage": "Gebruik",
+  "command copied": "opdracht gekopieerd",
+  "Note": "Opmerking",
+  "Normal type speed": "Normale typesnelheid",
+  "Fast type speed": "Snelle typesnelheid",
+  "Light Mode": "Lichte Modus",
+  "Dark Mode": "Donkere Modus",
+  "content": {
+    "subtitle": "Vind de juiste commando's zonder het web te doorzoeken."
+  },
+  "options": {
+    "title": "Ik wil:",
+    "primary": {
+      "add": "toevoegen",
+      "commit": "commit",
+      "revert": "ongedaan maken/resetten",
+      "initialize": "initialiseren",
+      "modify": "wijzigen",
+      "show": "tonen/bekijken",
+      "delete": "verwijderen",
+      "compareCommits": "twee commits vergelijken",
+      "configure": "configureren",
+      "clone": "klonen",
+      "ignore": "negeren",
+      "rename": "hernoemen",
+      "merge": "samenvoegen",
+      "squash": "squash",
+      "stash": "stash",
+      "debug": "debuggen",
+      "recover": "herstellen",
+      "synchronize": "synchroniseren",
+      "rebase": "rebase",
+      "cherrypick": "cherry-picken"
+    },
+    "secondary": {
+      "commit": {
+        "local-changes": {
+          "label": "commit alle lokale wijzigingen in gevolgde bestanden"
+        },
+        "staged-changes": {
+          "label": "commit alle gestageerde wijzigingen",
+          "nb": "Vervang <message> door je commitbericht."
+        }
+      },
+      "configure": {
+        "email-name": {
+          "label": "naam en e-mailadres",
+          "nb": "Je gebruikersnaam en e-mailadres moeten overeenkomen met die gebruikt door je Git-hostingprovider (bijv. GitHub, Bitbucket, GitLab)."
+        },
+        "editor": {
+          "label": "standaard editor",
+          "nb": "Wijzig de standaard editor naar vim."
+        },
+        "diff-tool": {
+          "label": "extern diff-tool",
+          "nb": "Stel het externe diff-tool in op meld."
+        },
+        "merge-tool": {
+          "label": "standaard merge-tool",
+          "nb": "Stel het standaard merge-tool in op meld."
+        },
+        "color": {
+          "label": "kleur",
+          "nb": "Schakel nuttige kleurcodering van commandoregeluitvoer in."
+        },
+        "signingkey": {
+          "label": "voeg de GPG-sleutel toe",
+          "nb": "Git is cryptografisch veilig, maar niet onfeilbaar. Als je werk van anderen op internet overneemt en wilt verifiëren dat commits daadwerkelijk van een vertrouwde bron komen, biedt Git verschillende manieren om werk te ondertekenen en te verifiëren met GPG."
+        }
+      },
+      "revert": {
+        "specific-commit": {
+          "label": "een specifieke commit",
+          "nb": "Gebruik git log om de hash van elke commit te zien."
+        },
+        "specific-file": {
+          "label": "een specifiek bestand"
+        },
+        "to-last-commit": {
+          "label": "naar de laatste commit"
+        },
+        "to-last-commit-from-remote": {
+          "label": "naar de laatste commit op de remote branch"
+        }
+      },
+      "initialize": {
+        "new-repo": {
+          "label": "een nieuwe repository",
+          "nb": "Zorg ervoor dat je in de juiste directory bent."
+        }
+      },
+      "modify": {
+        "commit-message": {
+          "label": "mijn laatste commitbericht"
+        },
+        "commit": {
+          "label": "mijn laatste commit maar laat het commitbericht ongewijzigd"
+        },
+        "remoteUrl": {
+          "label": "remote URL van de repository",
+          "nb": "<alias> is de naam van je remote, bijvoorbeeld origin."
+        }
+      },
+      "show": {
+        "repo-status": {
+          "label": "status van het project, inclusief gestageerde, niet-gestageerde en niet-gevolgde bestanden"
+        },
+        "logs": {
+          "label": "commitlog/geschiedenis"
+        },
+        "uncommittedChanges": {
+          "label": "niet-gecommitte wijzigingen"
+        },
+        "committedChanges": {
+          "label": "gecommitte/gestageerde wijzigingen"
+        },
+        "remoteUrl": {
+          "label": "remote URL van de repository"
+        },
+        "stash": {
+          "label": "stash"
+        },
+        "branch": {
+          "label": "branches",
+          "nb": "De actieve branch wordt voorafgegaan door *."
+        },
+        "tags": {
+          "label": "tags"
+        }
+      },
+      "delete": {
+        "branch": {
+          "label": "een branch"
+        },
+        "delete-multiple-branches": {
+          "label": "meerdere branches"
+        },
+        "tag": {
+          "label": "een tag"
+        },
+        "remote": {
+          "label": "remote"
+        },
+        "untracked-files": {
+          "label": "niet-gevolgde bestanden",
+          "nb": "Vervang -<flag> door:\n -i voor een interactieve opdracht\n -n om een voorbeeld te zien van wat wordt verwijderd\n -f om geforceerd te verwijderen\n -d om mappen te verwijderen\n -X om genegeerde bestanden te verwijderen\n -x om genegeerde en niet-genegeerde bestanden te verwijderen."
+        },
+        "files-from-index": {
+          "label": "bestanden uit de index",
+          "nb": "Gebruik deze optie om paden alleen uit de index te verwijderen. Werkmapbestanden, gewijzigd of niet, blijven ongewijzigd."
+        },
+        "local-branches-not-on-remote": {
+          "label": "lokale branches die niet op de remote bestaan",
+          "nb": "Gebruik de --dry-run optie om te rapporteren welke branches worden opgeschoond, zonder ze daadwerkelijk op te schonen."
+        },
+        "files-from-old-commit": {
+          "label": "bestanden uit oude commits",
+          "nb": "Net als de eerder beschreven rebase-optie, is filter-branch een herschrijfoperatie. Als je de geschiedenis hebt gepubliceerd, moet je de nieuwe referenties forceren (--force) pushen."
+        }
+      },
+      "compareCommits": {
+        "terminal": {
+          "label": "en toon het resultaat in de terminal",
+          "nb": "sha1 en sha2 zijn de hashes van de commits die je wilt vergelijken."
+        },
+        "file": {
+          "label": "en sla het resultaat op in een bestand",
+          "nb": "sha1 en sha2 zijn de hashes van de commits die je wilt vergelijken. \n\ndiff.txt is het bestand waarin je de inhoud van het verschil wilt opslaan."
+        }
+      },
+      "clone": {
+        "clone-repo-into-a-new-dir": {
+          "label": "een bestaande repository in een nieuwe directory klonen",
+          "nb": "De repository wordt gekloond in de opgegeven directory.\n\nVervang 'directory' door de gewenste directory."
+        },
+        "clone-repo-into-a-current-dir": {
+          "label": "een bestaande repository in de huidige directory klonen",
+          "nb": "De repository wordt gekloond in de huidige directory.\n\nDe huidige directory wordt weergegeven met een '.' (punt)."
+        },
+        "clone-repo-with-submodule-into-a-current-dir": {
+          "label": "een bestaande repository met zijn submodules in de huidige directory klonen",
+          "nb": "Als de Git-versie lager is dan 2.13, gebruik dan de --recursive optie."
+        },
+        "clone-submodule-after": {
+          "label": "submodules klonen na het klonen van een bestaande repository"
+        }
+      },
+      "ignore": {
+        "ignore-files-in-a-dir": {
+          "label": "negeer alle bestanden in een directory",
+          "nb": "Dit moet worden toegevoegd aan het .gitignore-bestand.\n\nVervang 'dir name' door de naam van de directory waarvan je wilt dat Git de bestanden negeert."
+        },
+        "ignore-all-files-of-a-specific-type": {
+          "label": "negeer alle bestanden van een specifiek type",
+          "nb": "Dit moet worden toegevoegd aan het .gitignore-bestand.\n\nVervang 'filename extension' door de bestandsextensie van de bestanden die je wilt dat Git negeert.\n\nBijvoorbeeld, *.py vertelt Git om alle Python-bestanden in de repository te negeren."
+        }
+      },
+      "help": {
+        "command-help": {
+          "label": "informatie over een opdracht",
+          "nb": "Voorbeeld: git merge --help\n\nDruk op q om de terminal te verlaten."
+        }
+      },
+      "add": {
+        "new-changes": {
+          "label": "nieuwe wijzigingen",
+          "nb": "Om alle bestanden in de huidige directory toe te voegen, gebruik 'git add .'.\n\nOm een directory toe te voegen, gebruik 'git add <directory>'."
+        },
+        "add-new-branch": {
+          "label": "een nieuwe branch"
+        },
+        "add-repo": {
+          "label": "een nieuwe remote repository"
+        },
+        "add-alias": {
+          "label": "een alias",
+          "nb": "Voorbeeld: git config --global alias.st status. Als je git st typt in de terminal, voert dit nu hetzelfde uit als git status."
+        },
+        "add-annotated-tag": {
+          "label": "een geannoteerde tag"
+        },
+        "add-annotated-tag-for-old-commit": {
+          "label": "een geannoteerde tag voor een oude commit"
+        }
+      },
+      "push": {
+        "new-remote-branch": {
+          "label": "een niet-bestaande remote branch"
+        }
+      },
+      "rename": {
+        "branch": {
+          "label": "een branch"
+        },
+        "file": {
+          "label": "een bestand"
+        },
+        "remoteUrl": {
+          "label": "een remote"
+        }
+      },
+      "merge": {
+        "branch": {
+          "label": "een andere branch samenvoegen met de huidige branch"
+        },
+        "single-file": {
+          "label": "een enkel bestand samenvoegen van een branch naar een andere."
+        }
+      },
+      "squash": {
+        "pr": {
+          "label": "commits in een pull request samenvoegen tot één commit",
+          "nb": "Zorg ervoor dat de laatste commits zijn opgehaald van upstream.\n\nVoorbeeld (ervan uitgaande dat je een remote hebt genaamd upstream):\n\ngit fetch upstream\ngit rebase -i upstream/master\n\nVerander 'pick' in 'squash' voor de commits die je wilt samenvoegen en sla op.\n\ngit push origin <onderwerp branch> --force-with-lease"
+        },
+        "commits": {
+          "label": "de laatste n commits samenvoegen tot één",
+          "nb": "Vervang N door het aantal commits dat je wilt samenvoegen en <message> door je commitbericht. Je kunt de opdracht 'git log' gebruiken om je commitgeschiedenis te bekijken."
+        }
+      },
+      "debug": {
+        "bisect": {
+          "label": "binair zoeken",
+          "nb": "Zodra je ten minste één slechte en één goede commit hebt opgegeven, selecteert git bisect een commit in het midden van dat geschiedenisbereik, checkt het uit en produceert iets als het volgende:\nBisecting: 675 revisies over om te testen na deze (ongeveer 10 stappen)\nJe moet nu de uitgecheckte versie compileren en testen. Als die versie correct werkt, typ dan:\n\ngit bisect good\n\nAls die versie defect is, typ dan:\n\ngit bisect bad\n\nDan antwoordt git bisect met iets als:\n\nBisecting: 337 revisies over om te testen na deze (ongeveer 9 stappen)\n\nBlijf het proces herhalen: compileer de boom, test het en, afhankelijk van het resultaat, voer git bisect good of git bisect bad uit om de volgende commit aan te vragen die getest moet worden.\nUiteindelijk zijn er geen revisies meer om te inspecteren en drukt de opdracht een beschrijving af van de eerste slechte commit. De referentie refs/bisect/bad wijst naar die commit.\nNa een bisect-sessie, om de bisect-status op te schonen en terug te keren naar de originele HEAD, voer je de volgende opdracht uit:\n\ngit bisect reset"
+        },
+        "blame": {
+          "label": "wie heeft elke regel gewijzigd",
+          "nb": "De -L optie beperkt de uitvoer tot het gevraagde lijnbereik."
+        },
+        "grep": {
+          "label": "zoek in bestanden",
+          "nb": "Druk regels af die overeenkomen met een patroon.\nOptie -n om de lijnnummers van overeenkomsten weer te geven."
+        }
+      },
+      "recover": {
+        "dropped-commit": {
+          "label": "toon hashes van hangende commits na een harde reset naar een eerdere commit",
+          "nb": "alternatief: git log -g. Voor herstel, gebruik:\ngit checkout -b <recovery> <hash>"
+        },
+        "deleted-branch": {
+          "label": "toon hashes van verwijderde branches of andere Git-objecten",
+          "nb": "toon hashes van alle hangende Git-objecten. Voor herstel, gebruik:\ngit checkout -b <recovery> <hash>"
+        }
+      },
+      "rebase": {
+        "origin-branch": {
+          "label": "een origin branch rebasen in mijn werkende branch",
+          "nb": "Rebase een origin branch in de werkende branch. Vervang <branch name> door de branch die je samenvoegt."
+        },
+        "local-branch": {
+          "label": "een lokale branch rebasen in mijn werkende branch",
+          "nb": "Rebase een andere lokale branch in de werkende branch. Vervang <branch name> door de branch die je samenvoegt."
+        },
+        "skip": {
+          "label": "en sla een commit over",
+          "nb": "Tijdens het rebasen kan Git commits mogelijk niet automatisch toepassen vanwege conflicten. Je kunt deze opdracht gebruiken om je eigen wijzigingen in de huidige commit te negeren en de wijzigingen van een inkomende branch toe te passen."
+        },
+        "continue": {
+          "label": "en ga verder na het oplossen van conflicten",
+          "nb": "Tijdens het rebasen kan Git commits mogelijk niet automatisch toepassen vanwege conflicten. Je kunt deze conflicten handmatig oplossen en deze opdracht gebruiken om door te gaan met de rebase-operatie."
+        }
+      },
+      "synchronize": {
+        "branch-from-fork": {
+          "label": "een branch in een fork",
+          "nb": "Je moet eerst een remote repository toevoegen voor je fork."
+        }
+      },
+      "stash": {
+        "save-stash": {
+          "label": "(niet) gevolgde bestanden",
+          "nb": "Om een stash op te slaan met een aangepast bericht, gebruik git stash save <message>.\n\nOm niet-gevolgde bestanden op te slaan, gebruik git stash save -u."
+        },
+        "list-stash": {
+          "label": "bekijk de lijst met stashes"
+        },
+        "apply-stash": {
+          "label": "toepassen"
+        },
+        "show": {
+          "label": "bekijk de inhoud van een stash",
+          "nb": "Je kunt de stash-ID weglaten als je de inhoud van de laatste stash wilt bekijken."
+        },
+        "delete-stash": {
+          "label": "verwijderen"
+        },
+        "create-branch": {
+          "label": "maak een nieuwe branch en pas de stash toe"
+        }
+      },
+      "cherrypick": {
+        "origin-branch": {
+          "label": "een commit van een origin branch toepassen op mijn werkende branch",
+          "nb": "Pas een of meer commits van een branch toe op je werkende branch."
+        }
+      }
+    },
+    "tertiary": {
+      "logs": {
+        "all": {
+          "label": "alles",
+          "nb": "Druk op q in de terminal om de logs te verlaten"
+        },
+        "last-n-commit": {
+          "label": "voor de laatste xxx aantal commits",
+          "nb": "Vervang n door het aantal commits, bijvoorbeeld: git log -2"
+        },
+        "particular-period": {
+          "label": "sinds een bepaalde periode",
+          "nb": "Vervang de periode door de gewenste tijdsduur, bijvoorbeeld: git log --since=3days. U kunt datums gebruiken zoals 2018-12-31.\n\nVergelijkbare opties zijn --until, --before, --after"
+        },
+        "commit-on-oneline": {
+          "label": "met elke commit op één regel"
+        },
+        "patches-introduced": {
+          "label": "met de patches die in elke commit zijn geïntroduceerd"
+        }
+      },
+      "branch": {
+        "in": {
+          "label": "terwijl u in de branch werkt"
+        },
+        "outside": {
+          "label": "van buiten de branch"
+        }
+      },
+      "add-new-branch": {
+        "no-checkout": {
+          "label": "maar blijf in de huidige branch waar ik aan werk"
+        },
+        "checkout": {
+          "label": "en schakel over naar de nieuwe branch"
+        },
+        "checkout-remote": {
+          "label": "van een andere branch"
+        }
+      },
+      "apply-stash": {
+        "latest": {
+          "label": "laatste stash"
+        },
+        "specific": {
+          "label": "een specifieke stash",
+          "nb": "De stash-ID kan worden verkregen door git stash list uit te voeren. Het heeft meestal dit formaat: stash@{index}, bijvoorbeeld: stash@{0}"
+        },
+        "pop": {
+          "label": "en verwijder de stash",
+          "nb": "De stash-ID is optioneel. Voeg deze toe als u een specifieke stash wilt toepassen en verwijderen; laat deze anders leeg om de laatste stash te verwijderen"
+        }
+      },
+      "delete-stash": {
+        "all": {
+          "label": "alle opgeslagen wijzigingen"
+        },
+        "specific": {
+          "label": "specifieke stash"
+        }
+      },
+      "delete-multiple-branches": {
+        "name": {
+          "label": "op naam"
+        },
+        "pattern": {
+          "label": "op patroon",
+          "nb": "Bijvoorbeeld: git branch | grep \"-\" | xargs git branch -D verwijdert alle branches die '-' in hun naam hebben, of git branch | grep -v \"master\\|staging\" | xargs git branch -D verwijdert alle branches behalve staging en master.\n\nLet op: Plaats uw regex-patroon altijd tussen aanhalingstekens"
+        }
+      }
+    }
+  }
+}

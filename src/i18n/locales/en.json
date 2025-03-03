@@ -1,0 +1,412 @@
+{
+  "Command": "Command",
+  "Explorer": "Explorer",
+  "Usage": "Usage",
+  "command copied": "command copied",
+  "Note": "Note",
+  "Normal type speed": "Normal type speed",
+  "Fast type speed": "Fast type speed",
+  "Light Mode": "Light Mode",
+  "Dark Mode": "Dark Mode",
+  "content": {
+    "subtitle": "Find the right commands you need without digging through the web."
+  },
+  "options": {
+    "title": "I want to:",
+    "primary": {
+      "add": "add",
+      "commit": "commit",
+      "revert": "revert/reset",
+      "initialize": "initialize",
+      "modify": "modify",
+      "show": "show/view",
+      "delete": "delete/remove",
+      "compareCommits": "compare two commits",
+      "configure": "configure",
+      "clone": "clone",
+      "ignore": "ignore",
+      "rename": "rename",
+      "merge": "merge",
+      "squash": "squash",
+      "stash": "stash",
+      "debug": "debug",
+      "recover": "recover",
+      "synchronize": "synchronize",
+      "rebase": "rebase",
+      "cherrypick": "cherry-pick"
+    },
+    "secondary": {
+      "commit": {
+        "local-changes": {
+          "label": "commit all local changes in tracked files"
+        },
+        "staged-changes": {
+          "label": "commit all staged changes",
+          "nb": "Replace <message> with your commit message."
+        }
+      },
+      "configure": {
+        "email-name": {
+          "label": "name and email address",
+          "nb": "Your username and email address should be the same as the one used with your git hosting provider i.e. github, bitbucket, gitlab etc"
+        },
+        "editor": {
+          "label": "default editor",
+          "nb": "Change default editor to vim."
+        },
+        "diff-tool": {
+          "label": "external diff tool",
+          "nb": "Set external diff tool to meld."
+        },
+        "merge-tool": {
+          "label": "default merge tool",
+          "nb": "Set default merge tool to meld."
+        },
+        "color": {
+          "label": "color",
+          "nb": "Enables helpful colorization of command line output"
+        },
+        "signingkey": {
+          "label": "add the GPG key",
+          "nb": "Git is cryptographically secure, but it's not foolproof. If you're taking work from others on the internet and want to verify that commits are actually from a trusted source, Git has a few ways to sign and verify work using GPG."
+        }
+      },
+      "revert": {
+        "specific-commit": {
+          "label": "a specific commit",
+          "nb": "Use git log to see the hash of each commit"
+        },
+        "specific-file": {
+          "label": "a specific file"
+        },
+        "to-last-commit": {
+          "label": "to last commit"
+        },
+        "to-last-commit-from-remote": {
+          "label": "to last commit on remote branch"
+        }
+      },
+      "initialize": {
+        "new-repo": {
+          "label": "a new repository",
+          "nb": "Make sure you are in the right directory"
+        }
+      },
+      "modify": {
+        "commit-message": {
+          "label": "my last/latest commit message"
+        },
+        "commit": {
+          "label": "my last commit but leave the commit message as is"
+        },
+        "remoteUrl": {
+          "label": "repo's remote url",
+          "nb": "<alias> is your remote name e.g origin"
+        }
+      },
+      "show": {
+        "repo-status": {
+          "label": "status of project including staged, unstaged and untracked files"
+        },
+        "logs": {
+          "label": "commit logs/history"
+        },
+        "uncommittedChanges": {
+          "label": "uncommitted changes"
+        },
+        "committedChanges": {
+          "label": "committed/staged changes"
+        },
+        "remoteUrl": {
+          "label": "repo's remote url"
+        },
+        "stash": {
+          "label": "stash"
+        },
+        "branch": {
+          "label": "branches",
+          "nb": "The active branch is prefixed with *"
+        },
+        "tags": {
+          "label": "tags"
+        }
+      },
+      "delete": {
+        "branch": {
+          "label": "a branch"
+        },
+        "delete-multiple-branches": {
+          "label": "multiple branches"
+        },
+        "tag": {
+          "label": "a tag"
+        },
+        "remote": {
+          "label": "remote"
+        },
+        "untracked-files": {
+          "label": "untracked files",
+          "nb": "replace -<flag> with:\n -i for interactive command\n -n to preview what will be removed\n -f to remove forcefully\n -d to remove directories\n -X to remove ignored files\n -x to remove ignored and non-ignored files"
+        },
+        "files-from-index": {
+          "label": "files from index",
+          "nb": "Use this option to unstage and remove paths only from the index. Working tree files, whether modified or not, will be left alone."
+        },
+        "local-branches-not-on-remote": {
+          "label": "local branches that don't exist at remote",
+          "nb": "Use the --dry-run option to report what branches will be pruned, but do not actually prune them"
+        },
+        "files-from-old-commit": {
+          "label": "files from old commits",
+          "nb": "Like the rebasing option described before, filter-branch is rewriting operation. If you have published history, you'll have to --force push the new refs."
+        }
+      },
+      "compareCommits": {
+        "terminal": {
+          "label": "and output result in the terminal",
+          "nb": "sha1 and sha2 are the sha hash of the commits you want to compare."
+        },
+        "file": {
+          "label": "and output result to a file",
+          "nb": "sha1 and sha2 are the sha of the commits you want to compare. \n\ndiff.txt is the file you want to store the contents of the diff"
+        }
+      },
+      "clone": {
+        "clone-repo-into-a-new-dir": {
+          "label": "existing repo into a new directory",
+          "nb": "The repo is cloned into the specified directory\n\nReplace 'directory' with the directory you want"
+        },
+        "clone-repo-into-a-current-dir": {
+          "label": "existing repo into the current directory",
+          "nb": "The repo is cloned into the current directory\n\nThe current directory is represented with a '.' (period)"
+        },
+        "clone-repo-with-submodule-into-a-current-dir": {
+          "label": "existing repo along with submodules into the current directory",
+          "nb": "If git version is under 2.13, use --recursive option instead."
+        },
+        "clone-submodule-after": {
+          "label": "submodules after cloning existing repo"
+        }
+      },
+      "ignore": {
+        "ignore-files-in-a-dir": {
+          "label": "all files in a directory",
+          "nb": "This must be added to .gitignore file\n\nReplace 'dir name' with name of directory whose files you want git to ignore"
+        },
+        "ignore-all-files-of-a-specific-type": {
+          "label": "all files of a specific type",
+          "nb": "This must be added to .gitignore file\n\nReplace 'filename extension' with the extension of the files you want git to ignore\n\nFor example *.py tells git to ignore all python files in the repository"
+        }
+      },
+      "help": {
+        "command-help": {
+          "label": "about a command",
+          "nb": "e.g. git merge --help\n\nType q to quite terminal"
+        }
+      },
+      "add": {
+        "new-changes": {
+          "label": "new changes",
+          "nb": "To add all the files in the current directory, use 'git add .'\n\nTo add a directory use 'git add <directory>'"
+        },
+        "add-new-branch": {
+          "label": "a new branch"
+        },
+        "add-repo": {
+          "label": "new remote repo"
+        },
+        "add-alias": {
+          "label": "alias",
+          "nb": "e.g. git config --global alias.st status. Typing git st in the terminal now does the same thing as git status"
+        },
+        "add-annotated-tag": {
+          "label": "annotated tag"
+        },
+        "add-annotated-tag-for-old-commit": {
+          "label": "annotated tag for old commit"
+        }
+      },
+      "push": {
+        "new-remote-branch": {
+          "label": "non-existent remote branch"
+        }
+      },
+      "rename": {
+        "branch": {
+          "label": "branch"
+        },
+        "file": {
+          "label": "file"
+        },
+        "remoteUrl": {
+          "label": "remote"
+        }
+      },
+      "merge": {
+        "branch": {
+          "label": "another branch to current branch"
+        },
+        "single-file": {
+          "label": "merge a single file from one branch to another."
+        }
+      },
+      "squash": {
+        "pr": {
+          "label": "commits in pull request into single commit",
+          "nb": "Make sure that latest commits are fetched from upstream.\n\nFor example (assuming you have a remote named upstream):\n\ngit fetch upstream\ngit rebase -i upstream/master\n\nChange 'pick' to 'squash' for the commits you wish to squash and save.\n\ngit push origin <topic branch> --force-with-lease"
+        },
+        "commits": {
+          "label": "last n number of commit into one",
+          "nb": "Replace N with the number of commits you want to squash and <message> with your commit message. You can use the command 'git log' to view your commit history"
+        }
+      },
+      "debug": {
+        "bisect": {
+          "label": "binary search",
+          "nb": "Once you have specified at least one bad and one good commit, git bisect selects a commit in the middle of that range of history, checks it out, and outputs something similar to the following:\nBisecting: 675 revisions left to test after this (roughly 10 steps)\nYou should now compile the checked-out version and test it. If that version works correctly, type\n\ngit bisect good\n\nIf that version is broken, type\n\ngit bisect bad\n\nThen git bisect will respond with something like\n\nBisecting: 337 revisions left to test after this (roughly 9 steps)\n\nKeep repeating the process: compile the tree, test it, and depending on whether it is good or bad run git bisect good or git bisect bad to ask for the next commit that needs testing.\nEventually there will be no more revisions left to inspect, and the command will print out a description of the first bad commit. The reference refs/bisect/bad will be left pointing at that commit.\nAfter a bisect session, to clean up the bisection state and return to the original HEAD, issue the following command:\n\ngit bisect reset"
+        },
+        "blame": {
+          "label": "who modified each lines",
+          "nb": "The -L option will restrict the output to the requested line range\n"
+        },
+        "grep": {
+          "label": "search in files",
+          "nb": "Print lines matching a pattern.\nOption -n to display the numbering of lines in which there are matches"
+        }
+      },
+      "recover": {
+        "dropped-commit": {
+          "label": "show hashes dangling commits after hard reset to previous commit",
+          "nb": "alternative: git log -g. For recovery use\ngit checkout -b <recovery> <hash>"
+        },
+        "deleted-branch": {
+          "label": "show hashes removed branch or other git objects",
+          "nb": "show hashes all dangling git objects. For recovery use\ngit checkout -b <recovery> <hash>"
+        }
+      },
+      "rebase": {
+        "origin-branch": {
+          "label": "an origin branch into my working branch",
+          "nb": "Rebase an origin branch into working branch. Replace <branch name> with the branch you are pulling"
+        },
+        "local-branch": {
+          "label": "a local branch into my working branch",
+          "nb": "Rebase another local branch into working branch. Replace <branch name> with the branch you are pulling"
+        },
+        "skip": {
+          "label": "and skip a commit",
+          "nb": "During rebase, git might not be able to automatically apply commits due to conflicts. You can use this command to discard of your own changes in the current commit and apply the changes from an incoming branch"
+        },
+        "continue": {
+          "label": "and continue after resolving conflicts",
+          "nb": "During rebase, git might not be able to automatically apply commits due to conflicts. You can resolve this conflicts manually and use this command to continue your rebase operation"
+        }
+      },
+      "synchronize": {
+        "branch-from-fork": {
+          "label": "a branch in a fork",
+          "nb": "You need to add a remote repo for your fork first."
+        }
+      },
+      "stash": {
+        "save-stash": {
+          "label": "(un)tracked files",
+          "nb": "To stash with a customized message use git stash save <message>\n\nTo stash untracked files git stash save -u"
+        },
+        "list-stash": {
+          "label": "view list of stashed changes"
+        },
+        "apply-stash": {
+          "label": "apply"
+        },
+        "show": {
+          "label": "view the contents of a stash",
+          "nb": "You can leave out the stash id if you want the contents of the latest stash"
+        },
+        "delete-stash": {
+          "label": "delete"
+        },
+        "create-branch": {
+          "label": "create a new branch and apply stash"
+        }
+      },
+      "cherrypick": {
+        "origin-branch": {
+          "label": "a commit from origin branch into my working branch",
+          "nb": "Applying one or more commit from one branch into your working branch. "
+        }
+      }
+    },
+    "tertiary": {
+      "logs": {
+        "all": {
+          "label": "all",
+          "nb": "Type q in the terminal to exit the logs"
+        },
+        "last-n-commit": {
+          "label": "for last xxx number of commits",
+          "nb": "Replace n with number of commits e.g. git log -2"
+        },
+        "particular-period": {
+          "label": "since a particular period",
+          "nb": "Replace period with intended timeframe e.g git log --since=3days. You can use dates like 2018-12-31.\n\n Similar flags are --until, --before, --after"
+        },
+        "commit-on-oneline": {
+          "label": "with each commit on one line"
+        },
+        "patches-introduced": {
+          "label": "with the patches introduced in each commit"
+        }
+      },
+      "branch": {
+        "in": {
+          "label": "while working in the branch"
+        },
+        "outside": {
+          "label": "from outside the branch"
+        }
+      },
+      "add-new-branch": {
+        "no-checkout": {
+          "label": "but remain in the current branch I am working from"
+        },
+        "checkout": {
+          "label": "and switch to the new branch"
+        },
+        "checkout-remote": {
+          "label": "from another branch"
+        }
+      },
+      "apply-stash": {
+        "latest": {
+          "label": "latest stash"
+        },
+        "specific": {
+          "label": "a specific stash",
+          "nb": "The stash id can be gotten when you run git stash list. It's usually in this format: stash@{index} e.g. stash@{0}"
+        },
+        "pop": {
+          "label": "and delete stash",
+          "nb": "Stash id optional. Add it if you want to apply and delete a specific stash otherwise leave to pop the latest stash"
+        }
+      },
+      "delete-stash": {
+        "all": {
+          "label": "all stashed changes"
+        },
+        "specific": {
+          "label": "specific stash"
+        }
+      },
+      "delete-multiple-branches": {
+        "name": {
+          "label": "by name"
+        },
+        "pattern": {
+          "label": "by pattern",
+          "nb": "e.g. git branch | grep \"-\" | xargs git branch -D will delete all branches that have '-' in their names or git branch | grep -v \"master\\|staging\" | xargs git branch -D will delete all branches except staging and master.\n\nNB: Always put your regex pattern in quotes"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,412 @@
+{
+  "Command": "명령어",
+  "Explorer": "탐색기",
+  "Usage": "사용법",
+  "command copied": "명령어 복사됨",
+  "Note": "참고",
+  "Normal type speed": "일반 타이핑 속도",
+  "Fast type speed": "빠른 타이핑 속도",
+  "Light Mode": "라이트 모드",
+  "Dark Mode": "다크 모드",
+  "content": {
+    "subtitle": "웹에서 검색하지 않고 필요한 명령어를 찾아보세요."
+  },
+  "options": {
+    "title": "다음을 수행하려고 합니다:",
+    "primary": {
+      "add": "추가",
+      "commit": "커밋",
+      "revert": "되돌리기/초기화",
+      "initialize": "초기화",
+      "modify": "수정",
+      "show": "표시/보기",
+      "delete": "삭제",
+      "compareCommits": "두 커밋 비교",
+      "configure": "구성",
+      "clone": "복제",
+      "ignore": "무시",
+      "rename": "이름 변경",
+      "merge": "병합",
+      "squash": "스쿼시",
+      "stash": "스태시",
+      "debug": "디버그",
+      "recover": "복구",
+      "synchronize": "동기화",
+      "rebase": "리베이스",
+      "cherrypick": "체리픽"
+    },
+    "secondary": {
+      "commit": {
+        "local-changes": {
+          "label": "추적 중인 파일의 모든 로컬 변경 사항을 커밋합니다 (commit)"
+        },
+        "staged-changes": {
+          "label": "스테이징된 모든 변경 사항을 커밋합니다 (staged)",
+          "nb": "<message>를 커밋 메시지로 바꾸세요."
+        }
+      },
+      "configure": {
+        "email-name": {
+          "label": "이름과 이메일 주소",
+          "nb": "사용자 이름과 이메일 주소는 Git 호스팅 제공자(예: GitHub, Bitbucket, GitLab)에서 사용한 것과 일치해야 합니다."
+        },
+        "editor": {
+          "label": "기본 편집기",
+          "nb": "기본 편집기를 vim으로 변경합니다."
+        },
+        "diff-tool": {
+          "label": "외부 diff 도구",
+          "nb": "외부 diff 도구를 meld로 설정합니다."
+        },
+        "merge-tool": {
+          "label": "기본 병합 도구",
+          "nb": "기본 병합 도구를 meld로 설정합니다."
+        },
+        "color": {
+          "label": "색상",
+          "nb": "명령줄 출력에 유용한 색상을 활성화합니다."
+        },
+        "signingkey": {
+          "label": "GPG 키 추가",
+          "nb": "Git은 암호화적으로 안전하지만 완벽하지는 않습니다. 인터넷에서 다른 사람의 작업을 가져오고 커밋이 신뢰할 수 있는 소스에서 온 것인지 확인하려면, Git은 GPG를 사용하여 작업에 서명하고 검증하는 여러 방법을 제공합니다."
+        }
+      },
+      "revert": {
+        "specific-commit": {
+          "label": "특정 커밋",
+          "nb": "각 커밋의 해시를 보려면 git log를 사용하세요."
+        },
+        "specific-file": {
+          "label": "특정 파일"
+        },
+        "to-last-commit": {
+          "label": "마지막 커밋으로 되돌리기"
+        },
+        "to-last-commit-from-remote": {
+          "label": "리모트 브랜치의 마지막 커밋으로 되돌리기"
+        }
+      },
+      "initialize": {
+        "new-repo": {
+          "label": "새로운 저장소",
+          "nb": "올바른 디렉토리에 있는지 확인하세요."
+        }
+      },
+      "modify": {
+        "commit-message": {
+          "label": "마지막 커밋 메시지 수정"
+        },
+        "commit": {
+          "label": "마지막 커밋을 수정하지만 커밋 메시지는 그대로 둡니다"
+        },
+        "remoteUrl": {
+          "label": "저장소의 리모트 URL",
+          "nb": "<alias>는 리모트 이름입니다 (예: origin)."
+        }
+      },
+      "show": {
+        "repo-status": {
+          "label": "프로젝트 상태 (스테이징된, 스테이징되지 않은, 추적되지 않은 파일 포함)"
+        },
+        "logs": {
+          "label": "커밋 로그/기록"
+        },
+        "uncommittedChanges": {
+          "label": "커밋되지 않은 변경 사항"
+        },
+        "committedChanges": {
+          "label": "커밋/스테이징된 변경 사항"
+        },
+        "remoteUrl": {
+          "label": "저장소의 리모트 URL"
+        },
+        "stash": {
+          "label": "스태시"
+        },
+        "branch": {
+          "label": "브랜치",
+          "nb": "활성 브랜치는 *로 표시됩니다."
+        },
+        "tags": {
+          "label": "태그"
+        }
+      },
+      "delete": {
+        "branch": {
+          "label": "브랜치 삭제"
+        },
+        "delete-multiple-branches": {
+          "label": "여러 브랜치 삭제"
+        },
+        "tag": {
+          "label": "태그 삭제"
+        },
+        "remote": {
+          "label": "리모트 삭제"
+        },
+        "untracked-files": {
+          "label": "추적되지 않은 파일 삭제",
+          "nb": "-<flag>를 다음 중 하나로 바꾸세요:\n -i 대화형 명령\n -n 삭제될 내용 미리보기\n -f 강제 삭제\n -d 디렉토리 삭제\n -X 무시된 파일 삭제\n -x 무시된 파일과 무시되지 않은 파일 삭제."
+        },
+        "files-from-index": {
+          "label": "인덱스에서 파일 삭제",
+          "nb": "이 옵션을 사용하여 인덱스에서만 경로를 언스테이징하고 제거합니다. 작업 트리 파일은 수정되었는지 여부에 관계없이 그대로 유지됩니다."
+        },
+        "local-branches-not-on-remote": {
+          "label": "리모트에 존재하지 않는 로컬 브랜치 삭제",
+          "nb": "--dry-run 옵션을 사용하여 어떤 브랜치가 제거될지 보고하지만 실제로 제거하지는 않습니다."
+        },
+        "files-from-old-commit": {
+          "label": "오래된 커밋에서 파일 삭제",
+          "nb": "이전에 설명한 리베이스 옵션과 마찬가지로, filter-branch는 재작성 작업입니다. 기록을 공개한 경우 새로운 참조를 --force로 푸시해야 합니다."
+        }
+      },
+      "compareCommits": {
+        "terminal": {
+          "label": "결과를 터미널에 출력",
+          "nb": "sha1과 sha2는 비교하려는 커밋의 해시입니다."
+        },
+        "file": {
+          "label": "결과를 파일로 출력",
+          "nb": "sha1과 sha2는 비교하려는 커밋의 해시입니다.\n\ndiff.txt는 차이점 내용을 저장할 파일입니다."
+        }
+      },
+      "clone": {
+        "clone-repo-into-a-new-dir": {
+          "label": "기존 저장소를 새 디렉토리에 복제",
+          "nb": "저장소는 지정된 디렉토리에 복제됩니다.\n\n'directory'를 원하는 디렉토리로 바꾸세요."
+        },
+        "clone-repo-into-a-current-dir": {
+          "label": "기존 저장소를 현재 디렉토리에 복제",
+          "nb": "저장소는 현재 디렉토리에 복제됩니다.\n\n현재 디렉토리는 '.'(점)로 표시됩니다."
+        },
+        "clone-repo-with-submodule-into-a-current-dir": {
+          "label": "기존 저장소와 서브모듈을 현재 디렉토리에 복제",
+          "nb": "Git 버전이 2.13 미만인 경우 --recursive 옵션을 대신 사용하세요."
+        },
+        "clone-submodule-after": {
+          "label": "기존 저장소를 복제한 후 서브모듈 복제"
+        }
+      },
+      "ignore": {
+        "ignore-files-in-a-dir": {
+          "label": "디렉토리 내 모든 파일 무시",
+          "nb": "이것은 .gitignore 파일에 추가해야 합니다.\n\n'dir name'을 무시하려는 디렉토리 이름으로 바꾸세요."
+        },
+        "ignore-all-files-of-a-specific-type": {
+          "label": "특정 유형의 모든 파일 무시",
+          "nb": "이것은 .gitignore 파일에 추가해야 합니다.\n\n'filename extension'을 무시하려는 파일 확장자로 바꾸세요.\n\n예를 들어, *.py는 Git에게 저장소 내 모든 Python 파일을 무시하도록 지시합니다."
+        }
+      },
+      "help": {
+        "command-help": {
+          "label": "명령어에 대한 도움말",
+          "nb": "예: git merge --help\n\n터미널을 종료하려면 q를 누르세요."
+        }
+      },
+      "add": {
+        "new-changes": {
+          "label": "새로운 변경 사항",
+          "nb": "현재 디렉토리의 모든 파일을 추가하려면 'git add .'를 사용하세요.\n\n디렉토리를 추가하려면 'git add <directory>'를 사용하세요."
+        },
+        "add-new-branch": {
+          "label": "새로운 브랜치 추가"
+        },
+        "add-repo": {
+          "label": "새로운 리모트 저장소 추가"
+        },
+        "add-alias": {
+          "label": "별칭 추가",
+          "nb": "예: git config --global alias.st status. 이제 터미널에서 git st를 입력하면 git status와 동일한 작업을 수행합니다."
+        },
+        "add-annotated-tag": {
+          "label": "주석이 달린 태그 추가"
+        },
+        "add-annotated-tag-for-old-commit": {
+          "label": "오래된 커밋에 주석이 달린 태그 추가"
+        }
+      },
+      "push": {
+        "new-remote-branch": {
+          "label": "존재하지 않는 리모트 브랜치에 푸시"
+        }
+      },
+      "rename": {
+        "branch": {
+          "label": "브랜치 이름 변경"
+        },
+        "file": {
+          "label": "파일 이름 변경"
+        },
+        "remoteUrl": {
+          "label": "리모트 이름 변경"
+        }
+      },
+      "merge": {
+        "branch": {
+          "label": "다른 브랜치를 현재 브랜치에 병합"
+        },
+        "single-file": {
+          "label": "한 파일을 다른 브랜치에서 병합합니다."
+        }
+      },
+      "squash": {
+        "pr": {
+          "label": "풀 리퀘스트의 커밋을 하나의 커밋으로 합치기",
+          "nb": "upstream에서 최신 커밋을 가져왔는지 확인하세요.\n\n예 (upstream이라는 리모트가 있다고 가정):\n\ngit fetch upstream\ngit rebase -i upstream/master\n\n합치려는 커밋의 'pick'을 'squash'로 변경하고 저장합니다.\n\ngit push origin <토픽 브랜치> --force-with-lease"
+        },
+        "commits": {
+          "label": "마지막 n개의 커밋을 하나로 합치기",
+          "nb": "N을 합치려는 커밋 수로, <message>를 커밋 메시지로 바꾸세요. 커밋 기록을 보려면 'git log' 명령을 사용할 수 있습니다."
+        }
+      },
+      "debug": {
+        "bisect": {
+          "label": "이진 검색",
+          "nb": "적어도 하나의 잘못된 커밋과 하나의 올바른 커밋을 지정하면, git bisect는 해당 기록 범위의 중간에 있는 커밋을 선택하고 체크아웃한 후 다음과 같은 출력을 합니다:\nBisecting: 675 revisions left to test after this (roughly 10 steps)\n이제 체크아웃된 버전을 컴파일하고 테스트해야 합니다. 해당 버전이 올바르게 작동하면 다음을 입력합니다:\n\ngit bisect good\n\n해당 버전이 잘못된 경우 다음을 입력합니다:\n\ngit bisect bad\n\n그러면 git bisect는 다음과 같이 응답합니다:\n\nBisecting: 337 revisions left to test after this (roughly 9 steps)\n\n프로세스를 반복합니다: 트리를 컴파일하고 테스트한 후 결과에 따라 git bisect good 또는 git bisect bad를 실행하여 테스트할 다음 커밋을 요청합니다.\n결국 검사할 리비전이 더 이상 없으며, 명령은 첫 번째 잘못된 커밋에 대한 설명을 출력합니다. 참조 refs/bisect/bad는 해당 커밋을 가리킵니다.\nbisect 세션 후, bisect 상태를 정리하고 원래 HEAD로 돌아가려면 다음 명령을 실행합니다:\n\ngit bisect reset"
+        },
+        "blame": {
+          "label": "누가 각 줄을 수정했는지 확인",
+          "nb": "-L 옵션은 출력을 요청된 줄 범위로 제한합니다."
+        },
+        "grep": {
+          "label": "파일 내 검색",
+          "nb": "패턴과 일치하는 줄을 출력합니다.\n-n 옵션으로 일치하는 줄의 줄 번호를 표시합니다."
+        }
+      },
+      "recover": {
+        "dropped-commit": {
+          "label": "이전 커밋으로 하드 리셋한 후 떠있는 커밋의 해시 표시",
+          "nb": "대안: git log -g. 복구하려면 다음을 사용하세요:\ngit checkout -b <recovery> <hash>"
+        },
+        "deleted-branch": {
+          "label": "삭제된 브랜치 또는 다른 Git 객체의 해시 표시",
+          "nb": "떠있는 모든 Git 객체의 해시를 표시합니다. 복구하려면 다음을 사용하세요:\ngit checkout -b <recovery> <hash>"
+        }
+      },
+      "rebase": {
+        "origin-branch": {
+          "label": "원격 브랜치를 작업 브랜치에 리베이스",
+          "nb": "원격 브랜치를 작업 브랜치에 리베이스합니다. <branch name>을 병합하려는 브랜치로 바꾸세요."
+        },
+        "local-branch": {
+          "label": "로컬 브랜치를 작업 브랜치에 리베이스",
+          "nb": "다른 로컬 브랜치를 작업 브랜치에 리베이스합니다. <branch name>을 병합하려는 브랜치로 바꾸세요."
+        },
+        "skip": {
+          "label": "커밋 건너뛰기",
+          "nb": "리베이스 중, Git은 충돌로 인해 커밋을 자동으로 적용하지 못할 수 있습니다. 이 명령을 사용하여 현재 커밋의 변경 사항을 버리고 들어오는 브랜치의 변경 사항을 적용할 수 있습니다."
+        },
+        "continue": {
+          "label": "충돌 해결 후 계속하기",
+          "nb": "리베이스 중, Git은 충돌로 인해 커밋을 자동으로 적용하지 못할 수 있습니다. 이러한 충돌을 수동으로 해결한 후 이 명령을 사용하여 리베이스 작업을 계속할 수 있습니다."
+        }
+      },
+      "synchronize": {
+        "branch-from-fork": {
+          "label": "포크의 브랜치 동기화",
+          "nb": "먼저 포크의 리모트 저장소를 추가해야 합니다."
+        }
+      },
+      "stash": {
+        "save-stash": {
+          "label": "(추적되지 않은) 파일",
+          "nb": "사용자 정의 메시지로 스태시를 저장하려면 git stash save <message>를 사용하세요.\n\n추적되지 않은 파일을 저장하려면 git stash save -u를 사용하세요."
+        },
+        "list-stash": {
+          "label": "스태시 목록 보기"
+        },
+        "apply-stash": {
+          "label": "적용"
+        },
+        "show": {
+          "label": "스태시 내용 보기",
+          "nb": "마지막 스태시의 내용을 보려면 스태시 ID를 생략할 수 있습니다."
+        },
+        "delete-stash": {
+          "label": "삭제"
+        },
+        "create-branch": {
+          "label": "새 브랜치를 만들고 스태시 적용"
+        }
+      },
+      "cherrypick": {
+        "origin-branch": {
+          "label": "원격 브랜치에서 커밋을 작업 브랜치에 적용",
+          "nb": "브랜치에서 하나 이상의 커밋을 작업 브랜치에 적용합니다."
+        }
+      }
+    },
+    "tertiary": {
+      "logs": {
+        "all": {
+          "label": "모두",
+          "nb": "터미널에서 q를 눌러 로그를 종료합니다"
+        },
+        "last-n-commit": {
+          "label": "마지막 xxx개의 커밋",
+          "nb": "n을 커밋 수로 바꾸세요. 예: git log -2"
+        },
+        "particular-period": {
+          "label": "특정 기간 이후",
+          "nb": "기간을 원하는 시간 범위로 바꾸세요. 예: git log --since=3days. 2018-12-31과 같은 날짜도 사용할 수 있습니다.\n\n비슷한 옵션은 --until, --before, --after입니다"
+        },
+        "commit-on-oneline": {
+          "label": "각 커밋을 한 줄로 표시"
+        },
+        "patches-introduced": {
+          "label": "각 커밋에서 도입된 패치 표시"
+        }
+      },
+      "branch": {
+        "in": {
+          "label": "브랜치 내에서 작업 중"
+        },
+        "outside": {
+          "label": "브랜치 외부에서"
+        }
+      },
+      "add-new-branch": {
+        "no-checkout": {
+          "label": "하지만 현재 작업 중인 브랜치에 남아 있기"
+        },
+        "checkout": {
+          "label": "새 브랜치로 전환"
+        },
+        "checkout-remote": {
+          "label": "다른 브랜치에서"
+        }
+      },
+      "apply-stash": {
+        "latest": {
+          "label": "최신 스태시"
+        },
+        "specific": {
+          "label": "특정 스태시",
+          "nb": "스태시 ID는 git stash list를 실행하면 얻을 수 있습니다. 일반적으로 stash@{index} 형식입니다. 예: stash@{0}"
+        },
+        "pop": {
+          "label": "스태시 적용 및 삭제",
+          "nb": "스태시 ID는 선택 사항입니다. 특정 스태시를 적용하고 삭제하려면 ID를 추가하고, 최신 스태시를 삭제하려면 비워 둡니다"
+        }
+      },
+      "delete-stash": {
+        "all": {
+          "label": "모든 스태시된 변경 사항"
+        },
+        "specific": {
+          "label": "특정 스태시"
+        }
+      },
+      "delete-multiple-branches": {
+        "name": {
+          "label": "이름으로"
+        },
+        "pattern": {
+          "label": "패턴으로",
+          "nb": "예: git branch | grep \"-\" | xargs git branch -D는 이름에 '-'가 포함된 모든 브랜치를 삭제합니다. 또는 git branch | grep -v \"master\\|staging\" | xargs git branch -D는 staging과 master를 제외한 모든 브랜치를 삭제합니다.\n\n참고: 정규식 패턴은 항상 따옴표로 묶어야 합니다"
+        }
+      }
+    }
+  }
+}

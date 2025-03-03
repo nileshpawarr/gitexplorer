@@ -1,0 +1,412 @@
+{
+  "Command": "命令",
+  "Explorer": "资源管理器",
+  "Usage": "用法",
+  "command copied": "命令已复制",
+  "Note": "注意",
+  "Normal type speed": "正常输入速度",
+  "Fast type speed": "快速输入速度",
+  "Light Mode": "浅色模式",
+  "Dark Mode": "深色模式",
+  "content": {
+    "subtitle": "无需搜索网络，找到您需要的命令。"
+  },
+  "options": {
+    "title": "我要：",
+    "primary": {
+      "add": "添加",
+      "commit": "提交",
+      "revert": "还原/重置",
+      "initialize": "初始化",
+      "modify": "修改",
+      "show": "显示/查看",
+      "delete": "删除",
+      "compareCommits": "比较两次提交",
+      "configure": "配置",
+      "clone": "克隆",
+      "ignore": "忽略",
+      "rename": "重命名",
+      "merge": "合并",
+      "squash": "压缩提交",
+      "stash": "储藏",
+      "debug": "调试",
+      "recover": "恢复",
+      "synchronize": "同步",
+      "rebase": "变基",
+      "cherrypick": "遴选"
+    },
+    "secondary": {
+      "commit": {
+        "local-changes": {
+          "label": "提交所有跟踪文件中的本地更改 (commit)"
+        },
+        "staged-changes": {
+          "label": "提交所有暂存的更改 (staged)",
+          "nb": "将 <message> 替换为您的提交信息。"
+        }
+      },
+      "configure": {
+        "email-name": {
+          "label": "姓名和电子邮件地址",
+          "nb": "您的用户名和电子邮件地址应与 Git 托管提供商（例如 GitHub、Bitbucket、GitLab）使用的相同。"
+        },
+        "editor": {
+          "label": "默认编辑器",
+          "nb": "将默认编辑器更改为 vim。"
+        },
+        "diff-tool": {
+          "label": "外部差异工具",
+          "nb": "将外部差异工具设置为 meld。"
+        },
+        "merge-tool": {
+          "label": "默认合并工具",
+          "nb": "将默认合并工具设置为 meld。"
+        },
+        "color": {
+          "label": "颜色",
+          "nb": "启用命令行输出的有用颜色标记。"
+        },
+        "signingkey": {
+          "label": "添加 GPG 密钥",
+          "nb": "Git 在加密上是安全的，但并非万无一失。如果您从互联网上获取他人的工作并希望验证提交确实来自可信来源，Git 提供了多种使用 GPG 签名和验证工作的方法。"
+        }
+      },
+      "revert": {
+        "specific-commit": {
+          "label": "特定的提交",
+          "nb": "使用 git log 查看每个提交的哈希值。"
+        },
+        "specific-file": {
+          "label": "特定文件"
+        },
+        "to-last-commit": {
+          "label": "恢复到上一个提交"
+        },
+        "to-last-commit-from-remote": {
+          "label": "恢复到远程分支的上一个提交"
+        }
+      },
+      "initialize": {
+        "new-repo": {
+          "label": "一个新的仓库",
+          "nb": "确保您在正确的目录中。"
+        }
+      },
+      "modify": {
+        "commit-message": {
+          "label": "我的最后一次提交信息"
+        },
+        "commit": {
+          "label": "我的最后一次提交，但保留提交信息不变"
+        },
+        "remoteUrl": {
+          "label": "仓库的远程 URL",
+          "nb": "<alias> 是您的远程名称，例如 origin。"
+        }
+      },
+      "show": {
+        "repo-status": {
+          "label": "项目状态，包括暂存、未暂存和未跟踪的文件"
+        },
+        "logs": {
+          "label": "提交日志/历史记录"
+        },
+        "uncommittedChanges": {
+          "label": "未提交的更改"
+        },
+        "committedChanges": {
+          "label": "已提交/暂存的更改"
+        },
+        "remoteUrl": {
+          "label": "仓库的远程 URL"
+        },
+        "stash": {
+          "label": "stash"
+        },
+        "branch": {
+          "label": "分支",
+          "nb": "活动分支以 * 为前缀。"
+        },
+        "tags": {
+          "label": "标签"
+        }
+      },
+      "delete": {
+        "branch": {
+          "label": "一个分支"
+        },
+        "delete-multiple-branches": {
+          "label": "多个分支"
+        },
+        "tag": {
+          "label": "一个标签"
+        },
+        "remote": {
+          "label": "远程"
+        },
+        "untracked-files": {
+          "label": "未跟踪的文件",
+          "nb": "将 -<flag> 替换为：\n -i 用于交互式命令\n -n 预览将要删除的内容\n -f 强制删除\n -d 删除目录\n -X 删除忽略的文件\n -x 删除忽略和未忽略的文件。"
+        },
+        "files-from-index": {
+          "label": "从索引中删除文件",
+          "nb": "使用此选项仅从索引中取消暂存和删除路径。工作树文件，无论是否修改，都将保持不变。"
+        },
+        "local-branches-not-on-remote": {
+          "label": "远程不存在的本地分支",
+          "nb": "使用 --dry-run 选项报告哪些分支将被修剪，但不实际修剪它们。"
+        },
+        "files-from-old-commit": {
+          "label": "从旧提交中删除文件",
+          "nb": "与之前描述的 rebase 选项一样，filter-branch 是一个重写操作。如果您已发布历史记录，则需要强制推送 (--force) 新引用。"
+        }
+      },
+      "compareCommits": {
+        "terminal": {
+          "label": "并在终端中输出结果",
+          "nb": "sha1 和 sha2 是您要比较的提交的哈希值。"
+        },
+        "file": {
+          "label": "并将结果输出到文件",
+          "nb": "sha1 和 sha2 是您要比较的提交的哈希值。\n\ndiff.txt 是您要保存差异内容的文件。"
+        }
+      },
+      "clone": {
+        "clone-repo-into-a-new-dir": {
+          "label": "将现有仓库克隆到新目录",
+          "nb": "仓库将被克隆到指定目录。\n\n将 'directory' 替换为您想要的目录。"
+        },
+        "clone-repo-into-a-current-dir": {
+          "label": "将现有仓库克隆到当前目录",
+          "nb": "仓库将被克隆到当前目录。\n\n当前目录用 '.'（点）表示。"
+        },
+        "clone-repo-with-submodule-into-a-current-dir": {
+          "label": "将现有仓库及其子模块克隆到当前目录",
+          "nb": "如果 Git 版本低于 2.13，请改用 --recursive 选项。"
+        },
+        "clone-submodule-after": {
+          "label": "克隆现有仓库后克隆子模块"
+        }
+      },
+      "ignore": {
+        "ignore-files-in-a-dir": {
+          "label": "忽略目录中的所有文件",
+          "nb": "这必须添加到 .gitignore 文件中。\n\n将 'dir name' 替换为您希望 Git 忽略的目录名称。"
+        },
+        "ignore-all-files-of-a-specific-type": {
+          "label": "忽略特定类型的所有文件",
+          "nb": "这必须添加到 .gitignore 文件中。\n\n将 'filename extension' 替换为您希望 Git 忽略的文件扩展名。\n\n例如，*.py 告诉 Git 忽略仓库中的所有 Python 文件。"
+        }
+      },
+      "help": {
+        "command-help": {
+          "label": "关于命令的帮助",
+          "nb": "例如：git merge --help\n\n按 q 退出终端。"
+        }
+      },
+      "add": {
+        "new-changes": {
+          "label": "新的更改",
+          "nb": "要添加当前目录中的所有文件，请使用 'git add .'。\n\n要添加目录，请使用 'git add <directory>'。"
+        },
+        "add-new-branch": {
+          "label": "一个新的分支"
+        },
+        "add-repo": {
+          "label": "一个新的远程仓库"
+        },
+        "add-alias": {
+          "label": "一个别名",
+          "nb": "例如：git config --global alias.st status。现在在终端中输入 git st 将执行与 git status 相同的操作。"
+        },
+        "add-annotated-tag": {
+          "label": "一个带注释的标签"
+        },
+        "add-annotated-tag-for-old-commit": {
+          "label": "为旧提交添加带注释的标签"
+        }
+      },
+      "push": {
+        "new-remote-branch": {
+          "label": "一个不存在的远程分支"
+        }
+      },
+      "rename": {
+        "branch": {
+          "label": "一个分支"
+        },
+        "file": {
+          "label": "一个文件"
+        },
+        "remoteUrl": {
+          "label": "一个远程"
+        }
+      },
+      "merge": {
+        "branch": {
+          "label": "将另一个分支合并到当前分支"
+        },
+        "single-file": {
+          "label": "将一个文件从一个分支合并到另一个分支。"
+        }
+      },
+      "squash": {
+        "pr": {
+          "label": "将拉取请求中的提交压缩为一个提交",
+          "nb": "确保从上游获取了最新的提交。\n\n例如（假设您有一个名为 upstream 的远程）：\n\ngit fetch upstream\ngit rebase -i upstream/master\n\n将 'pick' 更改为 'squash' 以压缩您希望合并的提交并保存。\n\ngit push origin <主题分支> --force-with-lease"
+        },
+        "commits": {
+          "label": "将最后 n 个提交压缩为一个",
+          "nb": "将 N 替换为您希望压缩的提交数量，将 <message> 替换为您的提交信息。您可以使用 'git log' 命令查看提交历史记录。"
+        }
+      },
+      "debug": {
+        "bisect": {
+          "label": "二分查找",
+          "nb": "一旦您指定了至少一个坏的和一个好的提交，git bisect 会选择该历史范围中间的提交，检出它，并输出类似以下内容：\nBisecting: 675 revisions left to test after this (roughly 10 steps)\n您现在应该编译检出的版本并测试它。如果该版本正常工作，请输入：\n\ngit bisect good\n\n如果该版本有问题，请输入：\n\ngit bisect bad\n\n然后 git bisect 会响应类似以下内容：\n\nBisecting: 337 revisions left to test after this (roughly 9 steps)\n\n继续重复该过程：编译树，测试它，并根据结果运行 git bisect good 或 git bisect bad 以请求下一个需要测试的提交。\n最终，将没有更多的修订需要检查，命令将打印出第一个坏提交的描述。引用 refs/bisect/bad 将指向该提交。\n在 bisect 会话后，要清理 bisect 状态并返回到原始 HEAD，请运行以下命令：\n\ngit bisect reset"
+        },
+        "blame": {
+          "label": "查看每行的修改者",
+          "nb": "-L 选项将限制输出到请求的行范围。"
+        },
+        "grep": {
+          "label": "在文件中搜索",
+          "nb": "打印与模式匹配的行。\n-n 选项显示匹配行的行号。"
+        }
+      },
+      "recover": {
+        "dropped-commit": {
+          "label": "显示在硬重置到上一个提交后挂起的提交哈希",
+          "nb": "替代方案：git log -g。要恢复，请使用：\ngit checkout -b <recovery> <hash>"
+        },
+        "deleted-branch": {
+          "label": "显示已删除分支或其他 Git 对象的哈希",
+          "nb": "显示所有挂起的 Git 对象的哈希。要恢复，请使用：\ngit checkout -b <recovery> <hash>"
+        }
+      },
+      "rebase": {
+        "origin-branch": {
+          "label": "将 origin 分支变基到我的工作分支",
+          "nb": "将 origin 分支变基到工作分支。将 <branch name> 替换为您正在合并的分支。"
+        },
+        "local-branch": {
+          "label": "将本地分支变基到我的工作分支",
+          "nb": "将另一个本地分支变基到工作分支。将 <branch name> 替换为您正在合并的分支。"
+        },
+        "skip": {
+          "label": "并跳过提交",
+          "nb": "在变基期间，Git 可能无法自动应用提交，因为存在冲突。您可以使用此命令丢弃当前提交中的更改，并应用来自传入分支的更改。"
+        },
+        "continue": {
+          "label": "并在解决冲突后继续",
+          "nb": "在变基期间，Git 可能无法自动应用提交，因为存在冲突。您可以手动解决这些冲突，并使用此命令继续变基操作。"
+        }
+      },
+      "synchronize": {
+        "branch-from-fork": {
+          "label": "同步 fork 中的分支",
+          "nb": "您需要首先为您的 fork 添加一个远程仓库。"
+        }
+      },
+      "stash": {
+        "save-stash": {
+          "label": "（未）跟踪的文件",
+          "nb": "要使用自定义消息保存 stash，请使用 git stash save <message>。\n\n要保存未跟踪的文件，请使用 git stash save -u。"
+        },
+        "list-stash": {
+          "label": "查看 stash 列表"
+        },
+        "apply-stash": {
+          "label": "应用"
+        },
+        "show": {
+          "label": "查看 stash 的内容",
+          "nb": "如果要查看最新 stash 的内容，可以省略 stash ID。"
+        },
+        "delete-stash": {
+          "label": "删除"
+        },
+        "create-branch": {
+          "label": "创建一个新分支并应用 stash"
+        }
+      },
+      "cherrypick": {
+        "origin-branch": {
+          "label": "将 origin 分支中的提交应用到我的工作分支",
+          "nb": "将一个或多个提交从一个分支应用到您的工作分支。"
+        }
+      }
+    },
+    "tertiary": {
+      "logs": {
+        "all": {
+          "label": "全部",
+          "nb": "在终端中按 q 退出日志"
+        },
+        "last-n-commit": {
+          "label": "最后 xxx 个提交",
+          "nb": "将 n 替换为提交数量，例如：git log -2"
+        },
+        "particular-period": {
+          "label": "自特定时间段以来",
+          "nb": "将时间段替换为所需的时间范围，例如：git log --since=3days。您可以使用日期，如 2018-12-31。\n\n类似的选项有 --until, --before, --after"
+        },
+        "commit-on-oneline": {
+          "label": "每个提交显示为一行"
+        },
+        "patches-introduced": {
+          "label": "显示每个提交中引入的补丁"
+        }
+      },
+      "branch": {
+        "in": {
+          "label": "在分支内工作时"
+        },
+        "outside": {
+          "label": "从分支外部"
+        }
+      },
+      "add-new-branch": {
+        "no-checkout": {
+          "label": "但保留在当前工作分支中"
+        },
+        "checkout": {
+          "label": "并切换到新分支"
+        },
+        "checkout-remote": {
+          "label": "从另一个分支"
+        }
+      },
+      "apply-stash": {
+        "latest": {
+          "label": "最新的存储"
+        },
+        "specific": {
+          "label": "特定的存储",
+          "nb": "存储 ID 可以通过运行 git stash list 获得。通常格式为：stash@{index}，例如：stash@{0}"
+        },
+        "pop": {
+          "label": "并删除存储",
+          "nb": "存储 ID 是可选的。如果要应用并删除特定存储，请添加 ID；否则留空以删除最新存储"
+        }
+      },
+      "delete-stash": {
+        "all": {
+          "label": "所有存储的更改"
+        },
+        "specific": {
+          "label": "特定的存储"
+        }
+      },
+      "delete-multiple-branches": {
+        "name": {
+          "label": "按名称"
+        },
+        "pattern": {
+          "label": "按模式",
+          "nb": "例如：git branch | grep \"-\" | xargs git branch -D 将删除名称中包含 '-' 的所有分支，或 git branch | grep -v \"master\\|staging\" | xargs git branch -D 将删除除 staging 和 master 之外的所有分支。\n\n注意：始终将正则表达式模式用引号括起来"
+        }
+      }
+    }
+  }
+}

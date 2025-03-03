@@ -1,0 +1,412 @@
+{
+  "Command": "Komut",
+  "Explorer": "Gezgin",
+  "Usage": "Kullanım",
+  "command copied": "komut kopyalandı",
+  "Note": "Not",
+  "Normal type speed": "Normal yazma hızı",
+  "Fast type speed": "Hızlı yazma hızı",
+  "Light Mode": "Açık Mod",
+  "Dark Mode": "Koyu Mod",
+  "content": {
+    "subtitle": "İhtiyacınız olan komutları web'de aramadan bulun."
+  },
+  "options": {
+    "title": "Şunu yapmak istiyorum:",
+    "primary": {
+      "add": "ekle",
+      "commit": "onayla (commit)",
+      "revert": "geri al/sıfırla",
+      "initialize": "başlat",
+      "modify": "değiştir",
+      "show": "göster/görüntüle",
+      "delete": "sil",
+      "compareCommits": "iki commit'i karşılaştır",
+      "configure": "yapılandır",
+      "clone": "klonla",
+      "ignore": "yoksay",
+      "rename": "yeniden adlandır",
+      "merge": "birleştir",
+      "squash": "sıkıştır (squash)",
+      "stash": "sakla (stash)",
+      "debug": "hata ayıkla",
+      "recover": "kurtar",
+      "synchronize": "senkronize et",
+      "rebase": "rebase",
+      "cherrypick": "seçmek (cherry-pick)"
+    },
+    "secondary": {
+      "commit": {
+        "local-changes": {
+          "label": "izlenen dosyalardaki tüm yerel değişiklikleri commit yap (commit)"
+        },
+        "staged-changes": {
+          "label": "staged'deki tüm değişiklikleri commit yap (staged)",
+          "nb": "<message> yerine commit mesajınızı yazın."
+        }
+      },
+      "configure": {
+        "email-name": {
+          "label": "isim ve e-posta adresi",
+          "nb": "Kullanıcı adınız ve e-posta adresiniz, Git barındırma sağlayıcınızda (örneğin, GitHub, Bitbucket, GitLab) kullanılanlarla aynı olmalıdır."
+        },
+        "editor": {
+          "label": "varsayılan editör",
+          "nb": "Varsayılan editörü vim olarak değiştir."
+        },
+        "diff-tool": {
+          "label": "harici diff aracı",
+          "nb": "Harici diff aracını meld olarak ayarla."
+        },
+        "merge-tool": {
+          "label": "varsayılan merge aracı",
+          "nb": "Varsayılan merge aracını meld olarak ayarla."
+        },
+        "color": {
+          "label": "renk",
+          "nb": "Komut satırı çıktısı için yararlı renklendirmeyi etkinleştir."
+        },
+        "signingkey": {
+          "label": "GPG anahtarı ekle",
+          "nb": "Git kriptografik olarak güvenlidir, ancak kusursuz değildir. İnternetten başkalarının çalışmalarını alıyorsanız ve commit'lerin gerçekten güvenilir bir kaynaktan geldiğini doğrulamak istiyorsanız, Git GPG kullanarak çalışmaları imzalamanın ve doğrulamanın birkaç yolunu sunar."
+        }
+      },
+      "revert": {
+        "specific-commit": {
+          "label": "belirli bir commit",
+          "nb": "Her commit'in hash'ini görmek için git log kullanın."
+        },
+        "specific-file": {
+          "label": "belirli bir dosya"
+        },
+        "to-last-commit": {
+          "label": "son commit'e geri dön"
+        },
+        "to-last-commit-from-remote": {
+          "label": "uzak branch'deki son commit'e geri dön"
+        }
+      },
+      "initialize": {
+        "new-repo": {
+          "label": "yeni bir depo",
+          "nb": "Doğru dizinde olduğunuzdan emin olun."
+        }
+      },
+      "modify": {
+        "commit-message": {
+          "label": "son commit mesajım"
+        },
+        "commit": {
+          "label": "son commit'im ama commit mesajını olduğu gibi bırak"
+        },
+        "remoteUrl": {
+          "label": "deponun uzak URL'si",
+          "nb": "<alias> uzak deponuzun adıdır, örneğin origin."
+        }
+      },
+      "show": {
+        "repo-status": {
+          "label": "proje durumu (staged, unstaged ve izlenmeyen dosyalar dahil)"
+        },
+        "logs": {
+          "label": "commit logları/geçmişi"
+        },
+        "uncommittedChanges": {
+          "label": "commit edilmemiş değişiklikler"
+        },
+        "committedChanges": {
+          "label": "commit edilmiş/staged değişiklikler"
+        },
+        "remoteUrl": {
+          "label": "deponun uzak URL'si"
+        },
+        "stash": {
+          "label": "stash"
+        },
+        "branch": {
+          "label": "branch'ler",
+          "nb": "Aktif branch * ile ön eklenir."
+        },
+        "tags": {
+          "label": "etiketler"
+        }
+      },
+      "delete": {
+        "branch": {
+          "label": "bir branch"
+        },
+        "delete-multiple-branches": {
+          "label": "birden fazla branch"
+        },
+        "tag": {
+          "label": "bir etiket"
+        },
+        "remote": {
+          "label": "uzak depo"
+        },
+        "untracked-files": {
+          "label": "izlenmeyen dosyalar",
+          "nb": "-<flag> yerine şunlardan birini kullanın:\n -i etkileşimli komut için\n -n neyin silineceğini önizlemek için\n -f zorla silmek için\n -d dizinleri silmek için\n -X yok sayılan dosyaları silmek için\n -x yok sayılan ve yok sayılmayan dosyaları silmek için."
+        },
+        "files-from-index": {
+          "label": "indeks'ten dosyalar",
+          "nb": "Bu seçenek, yalnızca indeks'ten yolları kaldırmak ve değişiklikleri geri almak için kullanılır. Çalışma dizinindeki dosyalar, değiştirilmiş olsun ya da olmasın, etkilenmez."
+        },
+        "local-branches-not-on-remote": {
+          "label": "uzak depoda bulunmayan yerel branch'ler",
+          "nb": "Hangi branch'lerin temizleneceğini raporlamak için --dry-run seçeneğini kullanın, ancak gerçekten temizlemeyin."
+        },
+        "files-from-old-commit": {
+          "label": "eski commit'lerden dosyalar",
+          "nb": "Daha önce açıklanan rebase seçeneği gibi, filter-branch bir yeniden yazma işlemidir. Geçmişi yayınladıysanız, yeni referansları --force ile göndermeniz gerekecektir."
+        }
+      },
+      "compareCommits": {
+        "terminal": {
+          "label": "ve sonucu terminalde göster",
+          "nb": "sha1 ve sha2, karşılaştırmak istediğiniz commit'lerin hash'leridir."
+        },
+        "file": {
+          "label": "ve sonucu bir dosyaya kaydet",
+          "nb": "sha1 ve sha2, karşılaştırmak istediğiniz commit'lerin hash'leridir. \n\ndiff.txt, farkın içeriğini kaydetmek istediğiniz dosyadır."
+        }
+      },
+      "clone": {
+        "clone-repo-into-a-new-dir": {
+          "label": "varolan bir depoyu yeni bir dizine klonla",
+          "nb": "Depo, belirtilen dizine klonlanır.\n\n'directory' yerine istediğiniz dizini yazın."
+        },
+        "clone-repo-into-a-current-dir": {
+          "label": "varolan bir depoyu mevcut dizine klonla",
+          "nb": "Depo, mevcut dizine klonlanır.\n\nMevcut dizin '.' (nokta) ile temsil edilir."
+        },
+        "clone-repo-with-submodule-into-a-current-dir": {
+          "label": "varolan bir depoyu alt modülleriyle birlikte mevcut dizine klonla",
+          "nb": "Git sürümü 2.13'ten düşükse, --recursive seçeneğini kullanın."
+        },
+        "clone-submodule-after": {
+          "label": "varolan bir depoyu klonladıktan sonra alt modülleri klonla"
+        }
+      },
+      "ignore": {
+        "ignore-files-in-a-dir": {
+          "label": "bir dizindeki tüm dosyaları yoksay",
+          "nb": "Bu, .gitignore dosyasına eklenmelidir.\n\n'dir name' yerine Git'in yoksaymasını istediğiniz dizinin adını yazın."
+        },
+        "ignore-all-files-of-a-specific-type": {
+          "label": "belirli bir türdeki tüm dosyaları yoksay",
+          "nb": "Bu, .gitignore dosyasına eklenmelidir.\n\n'filename extension' yerine Git'in yoksaymasını istediğiniz dosya uzantısını yazın.\n\nÖrneğin, *.py Git'e depodaki tüm Python dosyalarını yoksaymasını söyler."
+        }
+      },
+      "help": {
+        "command-help": {
+          "label": "bir komut hakkında yardım",
+          "nb": "Örnek: git merge --help\n\nTerminalden çıkmak için q tuşuna basın."
+        }
+      },
+      "add": {
+        "new-changes": {
+          "label": "yeni değişiklikler",
+          "nb": "Mevcut dizindeki tüm dosyaları eklemek için 'git add .' kullanın.\n\nBir dizin eklemek için 'git add <directory>' kullanın."
+        },
+        "add-new-branch": {
+          "label": "yeni bir branch ekle"
+        },
+        "add-repo": {
+          "label": "yeni bir uzak depo ekle"
+        },
+        "add-alias": {
+          "label": "bir takma ad ekle",
+          "nb": "Örnek: git config --global alias.st status. Artık terminalde git st yazdığınızda, git status ile aynı işlemi yapar."
+        },
+        "add-annotated-tag": {
+          "label": "açıklamalı bir etiket ekle"
+        },
+        "add-annotated-tag-for-old-commit": {
+          "label": "eski bir commit için açıklamalı etiket ekle"
+        }
+      },
+      "push": {
+        "new-remote-branch": {
+          "label": "var olmayan bir uzak branch'e gönder"
+        }
+      },
+      "rename": {
+        "branch": {
+          "label": "bir branch'i yeniden adlandır"
+        },
+        "file": {
+          "label": "bir dosyayı yeniden adlandır"
+        },
+        "remoteUrl": {
+          "label": "bir uzak depoyu yeniden adlandır"
+        }
+      },
+      "merge": {
+        "branch": {
+          "label": "başka bir branch'i mevcut branch ile birleştir"
+        },
+        "single-file": {
+          "label": "bir dosyayı bir branch'ten diğerine birleştir."
+        }
+      },
+      "squash": {
+        "pr": {
+          "label": "pull request'teki commit'leri tek bir commit'te birleştir",
+          "nb": "Upstream'den en son commit'lerin alındığından emin olun.\n\nÖrnek (upstream adında bir uzak deponuz olduğunu varsayalım):\n\ngit fetch upstream\ngit rebase -i upstream/master\n\nBirleştirmek istediğiniz commit'ler için 'pick' yerine 'squash' yazın ve kaydedin.\n\ngit push origin <konu branch'i> --force-with-lease"
+        },
+        "commits": {
+          "label": "son n commit'i tek bir commit'te birleştir",
+          "nb": "N yerine birleştirmek istediğiniz commit sayısını, <message> yerine commit mesajınızı yazın. Commit geçmişini görmek için 'git log' komutunu kullanabilirsiniz."
+        }
+      },
+      "debug": {
+        "bisect": {
+          "label": "ikili arama",
+          "nb": "En az bir kötü ve bir iyi commit belirttiğinizde, git bisect bu tarih aralığının ortasında bir commit seçer, kontrol eder ve şuna benzer bir çıktı verir:\nBisecting: 675 revisions left to test after this (roughly 10 steps)\nŞimdi kontrol edilen sürümü derlemeli ve test etmelisiniz. Bu sürüm doğru çalışıyorsa, şunu yazın:\n\ngit bisect good\n\nBu sürüm hatalıysa, şunu yazın:\n\ngit bisect bad\n\nArdından git bisect şöyle bir yanıt verir:\n\nBisecting: 337 revisions left to test after this (roughly 9 steps)\n\nİşlemi tekrarlayın: ağacı derleyin, test edin ve sonuca göre git bisect good veya git bisect bad çalıştırarak test edilecek bir sonraki commit'i isteyin.\nSonunda, incelemek için daha fazla revizyon kalmayacak ve komut ilk kötü commit'in bir açıklamasını yazdıracaktır. Referans refs/bisect/bad bu commit'i gösterecektir.\nBir bisect oturumundan sonra, bisect durumunu temizlemek ve orijinal HEAD'e dönmek için şu komutu çalıştırın:\n\ngit bisect reset"
+        },
+        "blame": {
+          "label": "her satırı kimin değiştirdiğini göster",
+          "nb": "-L seçeneği, çıktıyı istenen satır aralığıyla sınırlar."
+        },
+        "grep": {
+          "label": "dosyalarda arama yap",
+          "nb": "Bir desenle eşleşen satırları yazdırır.\n-n seçeneği eşleşen satırların satır numaralarını gösterir."
+        }
+      },
+      "recover": {
+        "dropped-commit": {
+          "label": "önceki bir commit'e hard reset yapıldıktan sonra asılı kalan commit'lerin hash'lerini göster",
+          "nb": "alternatif: git log -g. Kurtarmak için şunu kullanın:\ngit checkout -b <recovery> <hash>"
+        },
+        "deleted-branch": {
+          "label": "silinen branch'lerin veya diğer Git nesnelerinin hash'lerini göster",
+          "nb": "tüm asılı Git nesnelerinin hash'lerini gösterir. Kurtarmak için şunu kullanın:\ngit checkout -b <recovery> <hash>"
+        }
+      },
+      "rebase": {
+        "origin-branch": {
+          "label": "bir origin branch'ini çalışma branch'imde rebase yap",
+          "nb": "Bir origin branch'ini çalışma branch'inde rebase yapın. <branch name> yerine birleştirdiğiniz branch'i yazın."
+        },
+        "local-branch": {
+          "label": "yerel bir branch'i çalışma branch'imde rebase yap",
+          "nb": "Başka bir yerel branch'i çalışma branch'inde rebase yapın. <branch name> yerine birleştirdiğiniz branch'i yazın."
+        },
+        "skip": {
+          "label": "ve bir commit'i atla",
+          "nb": "Rebase sırasında Git, çakışmalar nedeniyle commit'leri otomatik olarak uygulayamayabilir. Bu komutu kullanarak mevcut commit'teki değişikliklerinizi atabilir ve gelen bir branch'ten değişiklikleri uygulayabilirsiniz."
+        },
+        "continue": {
+          "label": "ve çakışmaları çözdükten sonra devam et",
+          "nb": "Rebase sırasında Git, çakışmalar nedeniyle commit'leri otomatik olarak uygulayamayabilir. Bu çakışmaları manuel olarak çözebilir ve bu komutu kullanarak rebase işlemine devam edebilirsiniz."
+        }
+      },
+      "synchronize": {
+        "branch-from-fork": {
+          "label": "bir fork'taki bir branch'i senkronize et",
+          "nb": "Önce fork'unuz için bir uzak depo eklemeniz gerekiyor."
+        }
+      },
+      "stash": {
+        "save-stash": {
+          "label": "(izlenmeyen) dosyalar",
+          "nb": "Özel bir mesajla stash kaydetmek için git stash save <message> kullanın.\n\nİzlenmeyen dosyaları kaydetmek için git stash save -u kullanın."
+        },
+        "list-stash": {
+          "label": "stash listesini görüntüle"
+        },
+        "apply-stash": {
+          "label": "uygula"
+        },
+        "show": {
+          "label": "bir stash'in içeriğini görüntüle",
+          "nb": "Son stash'in içeriğini görmek istiyorsanız stash ID'sini atlayabilirsiniz."
+        },
+        "delete-stash": {
+          "label": "sil"
+        },
+        "create-branch": {
+          "label": "yeni bir branch oluştur ve stash'i uygula"
+        }
+      },
+      "cherrypick": {
+        "origin-branch": {
+          "label": "bir origin branch'inden bir commit'i çalışma branch'imde uygula",
+          "nb": "Bir branch'ten bir veya daha fazla commit'i çalışma branch'inize uygulayın."
+        }
+      }
+    },
+    "tertiary": {
+      "logs": {
+        "all": {
+          "label": "tümü",
+          "nb": "Terminalde q tuşuna basarak loglardan çıkın"
+        },
+        "last-n-commit": {
+          "label": "son xxx sayıda commit için",
+          "nb": "n'yi commit sayısıyla değiştirin, örneğin: git log -2"
+        },
+        "particular-period": {
+          "label": "belirli bir dönemden itibaren",
+          "nb": "Dönemi istenen zaman aralığıyla değiştirin, örneğin: git log --since=3days. 2018-12-31 gibi tarihler kullanabilirsiniz.\n\nBenzer seçenekler: --until, --before, --after"
+        },
+        "commit-on-oneline": {
+          "label": "her commit'i tek satırda göster"
+        },
+        "patches-introduced": {
+          "label": "her commit'de tanıtılan yamaları göster"
+        }
+      },
+      "branch": {
+        "in": {
+          "label": "dal (branch) içinde çalışırken"
+        },
+        "outside": {
+          "label": "dal (branch) dışından"
+        }
+      },
+      "add-new-branch": {
+        "no-checkout": {
+          "label": "ancak şu anda çalıştığım daldan (branch) ayrılmadan"
+        },
+        "checkout": {
+          "label": "ve yeni dala (branch) geç"
+        },
+        "checkout-remote": {
+          "label": "başka bir daldan (branch)"
+        }
+      },
+      "apply-stash": {
+        "latest": {
+          "label": "en son stash"
+        },
+        "specific": {
+          "label": "belirli bir stash",
+          "nb": "Stash kimliği, git stash list komutunu çalıştırarak alınabilir. Genellikle bu biçimdedir: stash@{index}, örneğin: stash@{0}"
+        },
+        "pop": {
+          "label": "ve stash'i sil",
+          "nb": "Stash kimliği isteğe bağlıdır. Belirli bir stash'i uygulayıp silmek istiyorsanız ekleyin; aksi takdirde en son stash'i silmek için boş bırakın"
+        }
+      },
+      "delete-stash": {
+        "all": {
+          "label": "tüm saklanan değişiklikler"
+        },
+        "specific": {
+          "label": "belirli bir stash"
+        }
+      },
+      "delete-multiple-branches": {
+        "name": {
+          "label": "isimle"
+        },
+        "pattern": {
+          "label": "kalıpla",
+          "nb": "Örneğin: git branch | grep \"-\" | xargs git branch -D, adında '-' olan tüm dalları (branches) siler veya git branch | grep -v \"master\\|staging\" | xargs git branch -D, staging ve master dışındaki tüm dalları siler.\n\nNot: Düzenli ifade (regex) kalıbınızı her zaman tırnak içine alın"
+        }
+      }
+    }
+  }
+}
